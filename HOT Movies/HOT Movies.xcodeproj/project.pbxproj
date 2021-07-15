@@ -12,6 +12,16 @@
 		EC5B1601269FBDBB000ACC84 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B15FE269FBDBB000ACC84 /* Assets.swift */; };
 		EC5B1602269FBDBB000ACC84 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B15FF269FBDBB000ACC84 /* Fonts.swift */; };
 		EC5B1603269FBDBB000ACC84 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B1600269FBDBB000ACC84 /* Localizable.swift */; };
+		EC5B160F269FE3D2000ACC84 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EC5B160E269FE3D2000ACC84 /* Alamofire */; };
+		EC5B1612269FE3EB000ACC84 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = EC5B1611269FE3EB000ACC84 /* ObjectMapper */; };
+		EC5B1615269FE427000ACC84 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = EC5B1614269FE427000ACC84 /* Then */; };
+		EC5B1618269FE453000ACC84 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = EC5B1617269FE453000ACC84 /* Reusable */; };
+		EC5B161B269FE497000ACC84 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EC5B161A269FE497000ACC84 /* Kingfisher */; };
+		EC5B1621269FE53D000ACC84 /* APIServies.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B1620269FE53D000ACC84 /* APIServies.swift */; };
+		EC5B1623269FE57F000ACC84 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B1622269FE57F000ACC84 /* MovieModel.swift */; };
+		EC5B1626269FE5E5000ACC84 /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B1625269FE5E5000ACC84 /* BaseError.swift */; };
+		EC5B1629269FE633000ACC84 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B1628269FE633000ACC84 /* APIKey.swift */; };
+		EC5B162B269FEC9F000ACC84 /* MovieURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B162A269FEC9F000ACC84 /* MovieURLs.swift */; };
 		EC882893269ECB54009A2DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC882892269ECB54009A2DC1 /* AppDelegate.swift */; };
 		EC882895269ECB54009A2DC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC882894269ECB54009A2DC1 /* SceneDelegate.swift */; };
 		EC88289C269ECB56009A2DC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC88289B269ECB56009A2DC1 /* Assets.xcassets */; };
@@ -39,6 +49,11 @@
 		EC5B15FE269FBDBB000ACC84 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		EC5B15FF269FBDBB000ACC84 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		EC5B1600269FBDBB000ACC84 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		EC5B1620269FE53D000ACC84 /* APIServies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServies.swift; sourceTree = "<group>"; };
+		EC5B1622269FE57F000ACC84 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		EC5B1625269FE5E5000ACC84 /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
+		EC5B1628269FE633000ACC84 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		EC5B162A269FEC9F000ACC84 /* MovieURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieURLs.swift; sourceTree = "<group>"; };
 		EC88288F269ECB54009A2DC1 /* HOT Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HOT Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC882892269ECB54009A2DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC882894269ECB54009A2DC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,8 +78,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC8828C7269EDCE7009A2DC1 /* RxCocoa in Frameworks */,
+				EC5B1612269FE3EB000ACC84 /* ObjectMapper in Frameworks */,
 				EC8828CB269EDCE7009A2DC1 /* RxSwift in Frameworks */,
+				EC5B1615269FE427000ACC84 /* Then in Frameworks */,
+				EC5B161B269FE497000ACC84 /* Kingfisher in Frameworks */,
 				EC8828D8269EEEA1009A2DC1 /* Localize_Swift in Frameworks */,
+				EC5B1618269FE453000ACC84 /* Reusable in Frameworks */,
+				EC5B160F269FE3D2000ACC84 /* Alamofire in Frameworks */,
 				EC8828C9269EDCE7009A2DC1 /* RxRelay in Frameworks */,
 				C252DD781B08454D50B87BB5 /* libPods-HOT Movies.a in Frameworks */,
 			);
@@ -88,6 +108,41 @@
 				B6C878087A077B215B87367E /* Pods-HOT Movies.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC5B161C269FE49F000ACC84 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC5B1622269FE57F000ACC84 /* MovieModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC5B161F269FE511000ACC84 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EC5B1627269FE607000ACC84 /* URLs */,
+				EC5B1624269FE5B9000ACC84 /* Errors */,
+				EC5B1620269FE53D000ACC84 /* APIServies.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EC5B1624269FE5B9000ACC84 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				EC5B1625269FE5E5000ACC84 /* BaseError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		EC5B1627269FE607000ACC84 /* URLs */ = {
+			isa = PBXGroup;
+			children = (
+				EC5B1628269FE633000ACC84 /* APIKey.swift */,
+				EC5B162A269FEC9F000ACC84 /* MovieURLs.swift */,
+			);
+			path = URLs;
 			sourceTree = "<group>";
 		};
 		EC882886269ECB54009A2DC1 = {
@@ -138,6 +193,7 @@
 		EC8828A7269ECB6A009A2DC1 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				EC5B161C269FE49F000ACC84 /* Models */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -145,6 +201,7 @@
 		EC8828A8269ECB75009A2DC1 /* Platform */ = {
 			isa = PBXGroup;
 			children = (
+				EC5B161F269FE511000ACC84 /* Services */,
 			);
 			path = Platform;
 			sourceTree = "<group>";
@@ -159,7 +216,6 @@
 		EC8828AA269ECBB5009A2DC1 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				EC8828D1269EEC03009A2DC1 /* Font */,
 				EC88289B269ECB56009A2DC1 /* Assets.xcassets */,
 				EC88289D269ECB56009A2DC1 /* LaunchScreen.storyboard */,
 				EC5B15FC269FBC45000ACC84 /* Localizable.strings */,
@@ -222,13 +278,6 @@
 			path = SwiftGen;
 			sourceTree = "<group>";
 		};
-		EC8828D1269EEC03009A2DC1 /* Font */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Font;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,6 +301,11 @@
 				EC8828C8269EDCE7009A2DC1 /* RxRelay */,
 				EC8828CA269EDCE7009A2DC1 /* RxSwift */,
 				EC8828D7269EEEA1009A2DC1 /* Localize_Swift */,
+				EC5B160E269FE3D2000ACC84 /* Alamofire */,
+				EC5B1611269FE3EB000ACC84 /* ObjectMapper */,
+				EC5B1614269FE427000ACC84 /* Then */,
+				EC5B1617269FE453000ACC84 /* Reusable */,
+				EC5B161A269FE497000ACC84 /* Kingfisher */,
 			);
 			productName = "HOT Movies";
 			productReference = EC88288F269ECB54009A2DC1 /* HOT Movies.app */;
@@ -284,6 +338,11 @@
 			packageReferences = (
 				EC8828C5269EDCE7009A2DC1 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				EC8828D6269EEEA1009A2DC1 /* XCRemoteSwiftPackageReference "Localize-Swift" */,
+				EC5B160D269FE3D2000ACC84 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				EC5B1610269FE3EB000ACC84 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				EC5B1613269FE427000ACC84 /* XCRemoteSwiftPackageReference "Then" */,
+				EC5B1616269FE453000ACC84 /* XCRemoteSwiftPackageReference "Reusable" */,
+				EC5B1619269FE497000ACC84 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = EC882890269ECB54009A2DC1 /* Products */;
 			projectDirPath = "";
@@ -358,12 +417,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5B1623269FE57F000ACC84 /* MovieModel.swift in Sources */,
 				EC8828BB269ECE09009A2DC1 /* SearchViewController.swift in Sources */,
+				EC5B1621269FE53D000ACC84 /* APIServies.swift in Sources */,
 				EC8828B7269ECDFB009A2DC1 /* HomeViewController.swift in Sources */,
 				EC5B1603269FBDBB000ACC84 /* Localizable.swift in Sources */,
 				EC5B1601269FBDBB000ACC84 /* Assets.swift in Sources */,
 				EC8828BF269ECE1A009A2DC1 /* FavoritesViewController.swift in Sources */,
+				EC5B162B269FEC9F000ACC84 /* MovieURLs.swift in Sources */,
 				EC882893269ECB54009A2DC1 /* AppDelegate.swift in Sources */,
+				EC5B1629269FE633000ACC84 /* APIKey.swift in Sources */,
+				EC5B1626269FE5E5000ACC84 /* BaseError.swift in Sources */,
 				EC8828B2269ECD07009A2DC1 /* TabBarViewController.swift in Sources */,
 				EC8828B4269ECD70009A2DC1 /* TabBarItems.swift in Sources */,
 				EC5B1602269FBDBB000ACC84 /* Fonts.swift in Sources */,
@@ -577,6 +641,46 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		EC5B160D269FE3D2000ACC84 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+		EC5B1610269FE3EB000ACC84 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		EC5B1613269FE427000ACC84 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+		EC5B1616269FE453000ACC84 /* XCRemoteSwiftPackageReference "Reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Reusable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
+		EC5B1619269FE497000ACC84 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
 		EC8828C5269EDCE7009A2DC1 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
@@ -596,6 +700,31 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EC5B160E269FE3D2000ACC84 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC5B160D269FE3D2000ACC84 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		EC5B1611269FE3EB000ACC84 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC5B1610269FE3EB000ACC84 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+		EC5B1614269FE427000ACC84 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC5B1613269FE427000ACC84 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		EC5B1617269FE453000ACC84 /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC5B1616269FE453000ACC84 /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
+		};
+		EC5B161A269FE497000ACC84 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC5B1619269FE497000ACC84 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		EC8828C6269EDCE7009A2DC1 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EC8828C5269EDCE7009A2DC1 /* XCRemoteSwiftPackageReference "RxSwift" */;

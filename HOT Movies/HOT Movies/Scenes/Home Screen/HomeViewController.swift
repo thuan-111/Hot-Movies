@@ -7,10 +7,12 @@
 
 import UIKit
 import RxSwift
+import Localize_Swift
 
 final class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(MovieURLs.shared.allMovieURL(page: 1))
     }
 }

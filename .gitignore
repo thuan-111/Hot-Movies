@@ -89,3 +89,4 @@ fastlane/test_output
 
 iOSInjectionProject/
 /HOT Movies/Pods
+/HOT Movies/HOT Movies/Platform/Services/URLs/APIKey.swift
