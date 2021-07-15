@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C252DD781B08454D50B87BB5 /* libPods-HOT Movies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C89C44DC20ADDA80D5FE020 /* libPods-HOT Movies.a */; };
+		EC882893269ECB54009A2DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC882892269ECB54009A2DC1 /* AppDelegate.swift */; };
+		EC882895269ECB54009A2DC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC882894269ECB54009A2DC1 /* SceneDelegate.swift */; };
+		EC88289C269ECB56009A2DC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC88289B269ECB56009A2DC1 /* Assets.xcassets */; };
+		EC88289F269ECB56009A2DC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC88289D269ECB56009A2DC1 /* LaunchScreen.storyboard */; };
+		EC8828B2269ECD07009A2DC1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8828B1269ECD07009A2DC1 /* TabBarViewController.swift */; };
+		EC8828C7269EDCE7009A2DC1 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EC8828C6269EDCE7009A2DC1 /* RxCocoa */; };
+		EC8828C9269EDCE7009A2DC1 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = EC8828C8269EDCE7009A2DC1 /* RxRelay */; };
+		EC8828CB269EDCE7009A2DC1 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EC8828CA269EDCE7009A2DC1 /* RxSwift */; };
+		EC8828D8269EEEA1009A2DC1 /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = EC8828D7269EEEA1009A2DC1 /* Localize_Swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C89C44DC20ADDA80D5FE020 /* libPods-HOT Movies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HOT Movies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C878087A077B215B87367E /* Pods-HOT Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOT Movies.release.xcconfig"; path = "Target Support Files/Pods-HOT Movies/Pods-HOT Movies.release.xcconfig"; sourceTree = "<group>"; };
+		EC5B15F9269FBC06000ACC84 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EC88288F269ECB54009A2DC1 /* HOT Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HOT Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC882892269ECB54009A2DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC882894269ECB54009A2DC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EC88289B269ECB56009A2DC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC88289E269ECB56009A2DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC8828A0269ECB56009A2DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC8828B1269ECD07009A2DC1 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		F37EF06E83102B91F4D1BFF4 /* Pods-HOT Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOT Movies.debug.xcconfig"; path = "Target Support Files/Pods-HOT Movies/Pods-HOT Movies.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC88288C269ECB54009A2DC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8828C7269EDCE7009A2DC1 /* RxCocoa in Frameworks */,
+				EC8828CB269EDCE7009A2DC1 /* RxSwift in Frameworks */,
+				EC8828D8269EEEA1009A2DC1 /* Localize_Swift in Frameworks */,
+				EC8828C9269EDCE7009A2DC1 /* RxRelay in Frameworks */,
+				C252DD781B08454D50B87BB5 /* libPods-HOT Movies.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E3DED53F7CF4B6C03C9E4BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C89C44DC20ADDA80D5FE020 /* libPods-HOT Movies.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		648004B7444476CDE93582EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F37EF06E83102B91F4D1BFF4 /* Pods-HOT Movies.debug.xcconfig */,
+				B6C878087A077B215B87367E /* Pods-HOT Movies.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC882886269ECB54009A2DC1 = {
+			isa = PBXGroup;
+			children = (
+				EC882891269ECB54009A2DC1 /* HOT Movies */,
+				EC882890269ECB54009A2DC1 /* Products */,
+				648004B7444476CDE93582EA /* Pods */,
+				3E3DED53F7CF4B6C03C9E4BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC882890269ECB54009A2DC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC88288F269ECB54009A2DC1 /* HOT Movies.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC882891269ECB54009A2DC1 /* HOT Movies */ = {
+			isa = PBXGroup;
+			children = (
+				EC8828AB269ECBDD009A2DC1 /* AppDelegate */,
+				EC8828AA269ECBB5009A2DC1 /* Resource */,
+				EC8828A9269ECBAC009A2DC1 /* Extensions */,
+				EC8828A8269ECB75009A2DC1 /* Platform */,
+				EC8828A7269ECB6A009A2DC1 /* Domain */,
+				EC8828A6269ECB62009A2DC1 /* Scenes */,
+				EC8828A0269ECB56009A2DC1 /* Info.plist */,
+			);
+			path = "HOT Movies";
+			sourceTree = "<group>";
+		};
+		EC8828A6269ECB62009A2DC1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EC8828AC269ECC91009A2DC1 /* TabBar */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EC8828A7269ECB6A009A2DC1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EC8828A8269ECB75009A2DC1 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		EC8828A9269ECBAC009A2DC1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EC8828AA269ECBB5009A2DC1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EC8828D1269EEC03009A2DC1 /* Font */,
+				EC88289B269ECB56009A2DC1 /* Assets.xcassets */,
+				EC88289D269ECB56009A2DC1 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EC8828AB269ECBDD009A2DC1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EC882892269ECB54009A2DC1 /* AppDelegate.swift */,
+				EC882894269ECB54009A2DC1 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		EC8828AC269ECC91009A2DC1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EC8828B1269ECD07009A2DC1 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		EC8828D1269EEC03009A2DC1 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC88288E269ECB54009A2DC1 /* HOT Movies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8828A3269ECB56009A2DC1 /* Build configuration list for PBXNativeTarget "HOT Movies" */;
+			buildPhases = (
+				EA6C71FA8B93FE0691713C70 /* [CP] Check Pods Manifest.lock */,
+				EC8828C1269ED191009A2DC1 /* Run SwiftLint */,
+				EC88288B269ECB54009A2DC1 /* Sources */,
+				EC88288C269ECB54009A2DC1 /* Frameworks */,
+				EC88288D269ECB54009A2DC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HOT Movies";
+			packageProductDependencies = (
+				EC8828C6269EDCE7009A2DC1 /* RxCocoa */,
+				EC8828C8269EDCE7009A2DC1 /* RxRelay */,
+				EC8828CA269EDCE7009A2DC1 /* RxSwift */,
+				EC8828D7269EEEA1009A2DC1 /* Localize_Swift */,
+			);
+			productName = "HOT Movies";
+			productReference = EC88288F269ECB54009A2DC1 /* HOT Movies.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC882887269ECB54009A2DC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EC88288E269ECB54009A2DC1 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = EC88288A269ECB54009A2DC1 /* Build configuration list for PBXProject "HOT Movies" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				vi,
+			);
+			mainGroup = EC882886269ECB54009A2DC1;
+			packageReferences = (
+				EC8828C5269EDCE7009A2DC1 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				EC8828D6269EEEA1009A2DC1 /* XCRemoteSwiftPackageReference "Localize-Swift" */,
+			);
+			productRefGroup = EC882890269ECB54009A2DC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC88288E269ECB54009A2DC1 /* HOT Movies */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC88288D269ECB54009A2DC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC88289F269ECB56009A2DC1 /* LaunchScreen.storyboard in Resources */,
+				EC88289C269ECB56009A2DC1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EA6C71FA8B93FE0691713C70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HOT Movies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC8828C1269ED191009A2DC1 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC88288B269ECB54009A2DC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC882893269ECB54009A2DC1 /* AppDelegate.swift in Sources */,
+				EC8828B2269ECD07009A2DC1 /* TabBarViewController.swift in Sources */,
+				EC882895269ECB54009A2DC1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC88289D269ECB56009A2DC1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC88289E269ECB56009A2DC1 /* Base */,
+				EC5B15F9269FBC06000ACC84 /* vi */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC8828A1269ECB56009A2DC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC8828A2269ECB56009A2DC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC8828A4269ECB56009A2DC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F37EF06E83102B91F4D1BFF4 /* Pods-HOT Movies.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7X6CSKVAS2;
+				INFOPLIST_FILE = "HOT Movies/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "con.tk1.HOT-Movies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC8828A5269ECB56009A2DC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6C878087A077B215B87367E /* Pods-HOT Movies.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7X6CSKVAS2;
+				INFOPLIST_FILE = "HOT Movies/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "con.tk1.HOT-Movies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC88288A269ECB54009A2DC1 /* Build configuration list for PBXProject "HOT Movies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8828A1269ECB56009A2DC1 /* Debug */,
+				EC8828A2269ECB56009A2DC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC8828A3269ECB56009A2DC1 /* Build configuration list for PBXNativeTarget "HOT Movies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8828A4269ECB56009A2DC1 /* Debug */,
+				EC8828A5269ECB56009A2DC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC8828C5269EDCE7009A2DC1 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+		EC8828D6269EEEA1009A2DC1 /* XCRemoteSwiftPackageReference "Localize-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Localize-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC8828C6269EDCE7009A2DC1 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC8828C5269EDCE7009A2DC1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		EC8828C8269EDCE7009A2DC1 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC8828C5269EDCE7009A2DC1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		EC8828CA269EDCE7009A2DC1 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC8828C5269EDCE7009A2DC1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		EC8828D7269EEEA1009A2DC1 /* Localize_Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC8828D6269EEEA1009A2DC1 /* XCRemoteSwiftPackageReference "Localize-Swift" */;
+			productName = Localize_Swift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EC882887269ECB54009A2DC1 /* Project object */;
+}
