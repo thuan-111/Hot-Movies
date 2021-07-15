@@ -1,0 +1,18 @@
+strings:
+  inputs: HOT Movies/Resource/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: HOT Movies/SwiftGen/Localizable.swift
+
+xcassets:
+  inputs:
+    - HOT Movies/Resource/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: HOT Movies/SwiftGen/Assets.swift
+      
+fonts:
+  inputs: HOT Movies/Resource/Font
+  outputs:
+    templateName: swift5
+    output: HOT Movies/SwiftGen/Fonts.swift
