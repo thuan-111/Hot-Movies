@@ -8,11 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C252DD781B08454D50B87BB5 /* libPods-HOT Movies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C89C44DC20ADDA80D5FE020 /* libPods-HOT Movies.a */; };
+		EC5B15FA269FBC45000ACC84 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC5B15FC269FBC45000ACC84 /* Localizable.strings */; };
+		EC5B1601269FBDBB000ACC84 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B15FE269FBDBB000ACC84 /* Assets.swift */; };
+		EC5B1602269FBDBB000ACC84 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B15FF269FBDBB000ACC84 /* Fonts.swift */; };
+		EC5B1603269FBDBB000ACC84 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B1600269FBDBB000ACC84 /* Localizable.swift */; };
 		EC882893269ECB54009A2DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC882892269ECB54009A2DC1 /* AppDelegate.swift */; };
 		EC882895269ECB54009A2DC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC882894269ECB54009A2DC1 /* SceneDelegate.swift */; };
 		EC88289C269ECB56009A2DC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC88289B269ECB56009A2DC1 /* Assets.xcassets */; };
 		EC88289F269ECB56009A2DC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC88289D269ECB56009A2DC1 /* LaunchScreen.storyboard */; };
 		EC8828B2269ECD07009A2DC1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8828B1269ECD07009A2DC1 /* TabBarViewController.swift */; };
+		EC8828B4269ECD70009A2DC1 /* TabBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8828B3269ECD70009A2DC1 /* TabBarItems.swift */; };
+		EC8828B7269ECDFB009A2DC1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8828B5269ECDFB009A2DC1 /* HomeViewController.swift */; };
+		EC8828B8269ECDFB009A2DC1 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC8828B6269ECDFB009A2DC1 /* HomeViewController.xib */; };
+		EC8828BB269ECE09009A2DC1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8828B9269ECE09009A2DC1 /* SearchViewController.swift */; };
+		EC8828BC269ECE09009A2DC1 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC8828BA269ECE09009A2DC1 /* SearchViewController.xib */; };
+		EC8828BF269ECE1A009A2DC1 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8828BD269ECE1A009A2DC1 /* FavoritesViewController.swift */; };
+		EC8828C0269ECE1A009A2DC1 /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC8828BE269ECE1A009A2DC1 /* FavoritesViewController.xib */; };
 		EC8828C7269EDCE7009A2DC1 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EC8828C6269EDCE7009A2DC1 /* RxCocoa */; };
 		EC8828C9269EDCE7009A2DC1 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = EC8828C8269EDCE7009A2DC1 /* RxRelay */; };
 		EC8828CB269EDCE7009A2DC1 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EC8828CA269EDCE7009A2DC1 /* RxSwift */; };
@@ -23,6 +34,11 @@
 		4C89C44DC20ADDA80D5FE020 /* libPods-HOT Movies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HOT Movies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C878087A077B215B87367E /* Pods-HOT Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOT Movies.release.xcconfig"; path = "Target Support Files/Pods-HOT Movies/Pods-HOT Movies.release.xcconfig"; sourceTree = "<group>"; };
 		EC5B15F9269FBC06000ACC84 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EC5B15FB269FBC45000ACC84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EC5B15FD269FBC4A000ACC84 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EC5B15FE269FBDBB000ACC84 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		EC5B15FF269FBDBB000ACC84 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		EC5B1600269FBDBB000ACC84 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		EC88288F269ECB54009A2DC1 /* HOT Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HOT Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC882892269ECB54009A2DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC882894269ECB54009A2DC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +46,14 @@
 		EC88289E269ECB56009A2DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC8828A0269ECB56009A2DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC8828B1269ECD07009A2DC1 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		EC8828B3269ECD70009A2DC1 /* TabBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItems.swift; sourceTree = "<group>"; };
+		EC8828B5269ECDFB009A2DC1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EC8828B6269ECDFB009A2DC1 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		EC8828B9269ECE09009A2DC1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		EC8828BA269ECE09009A2DC1 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		EC8828BD269ECE1A009A2DC1 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		EC8828BE269ECE1A009A2DC1 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		EC8828CD269EE3DF009A2DC1 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		F37EF06E83102B91F4D1BFF4 /* Pods-HOT Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOT Movies.debug.xcconfig"; path = "Target Support Files/Pods-HOT Movies/Pods-HOT Movies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +93,7 @@
 		EC882886269ECB54009A2DC1 = {
 			isa = PBXGroup;
 			children = (
+				EC8828CD269EE3DF009A2DC1 /* swiftgen.yml */,
 				EC882891269ECB54009A2DC1 /* HOT Movies */,
 				EC882890269ECB54009A2DC1 /* Products */,
 				648004B7444476CDE93582EA /* Pods */,
@@ -93,6 +118,7 @@
 				EC8828A8269ECB75009A2DC1 /* Platform */,
 				EC8828A7269ECB6A009A2DC1 /* Domain */,
 				EC8828A6269ECB62009A2DC1 /* Scenes */,
+				EC8828CE269EE4BF009A2DC1 /* SwiftGen */,
 				EC8828A0269ECB56009A2DC1 /* Info.plist */,
 			);
 			path = "HOT Movies";
@@ -102,6 +128,9 @@
 			isa = PBXGroup;
 			children = (
 				EC8828AC269ECC91009A2DC1 /* TabBar */,
+				EC8828AD269ECC9A009A2DC1 /* Home Screen */,
+				EC8828AF269ECCC0009A2DC1 /* Search Screen */,
+				EC8828AE269ECCAB009A2DC1 /* Favorites Screen */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -133,6 +162,7 @@
 				EC8828D1269EEC03009A2DC1 /* Font */,
 				EC88289B269ECB56009A2DC1 /* Assets.xcassets */,
 				EC88289D269ECB56009A2DC1 /* LaunchScreen.storyboard */,
+				EC5B15FC269FBC45000ACC84 /* Localizable.strings */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -150,8 +180,46 @@
 			isa = PBXGroup;
 			children = (
 				EC8828B1269ECD07009A2DC1 /* TabBarViewController.swift */,
+				EC8828B3269ECD70009A2DC1 /* TabBarItems.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		EC8828AD269ECC9A009A2DC1 /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				EC8828B5269ECDFB009A2DC1 /* HomeViewController.swift */,
+				EC8828B6269ECDFB009A2DC1 /* HomeViewController.xib */,
+			);
+			path = "Home Screen";
+			sourceTree = "<group>";
+		};
+		EC8828AE269ECCAB009A2DC1 /* Favorites Screen */ = {
+			isa = PBXGroup;
+			children = (
+				EC8828BD269ECE1A009A2DC1 /* FavoritesViewController.swift */,
+				EC8828BE269ECE1A009A2DC1 /* FavoritesViewController.xib */,
+			);
+			path = "Favorites Screen";
+			sourceTree = "<group>";
+		};
+		EC8828AF269ECCC0009A2DC1 /* Search Screen */ = {
+			isa = PBXGroup;
+			children = (
+				EC8828B9269ECE09009A2DC1 /* SearchViewController.swift */,
+				EC8828BA269ECE09009A2DC1 /* SearchViewController.xib */,
+			);
+			path = "Search Screen";
+			sourceTree = "<group>";
+		};
+		EC8828CE269EE4BF009A2DC1 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				EC5B15FE269FBDBB000ACC84 /* Assets.swift */,
+				EC5B15FF269FBDBB000ACC84 /* Fonts.swift */,
+				EC5B1600269FBDBB000ACC84 /* Localizable.swift */,
+			);
+			path = SwiftGen;
 			sourceTree = "<group>";
 		};
 		EC8828D1269EEC03009A2DC1 /* Font */ = {
@@ -232,7 +300,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC88289F269ECB56009A2DC1 /* LaunchScreen.storyboard in Resources */,
+				EC5B15FA269FBC45000ACC84 /* Localizable.strings in Resources */,
 				EC88289C269ECB56009A2DC1 /* Assets.xcassets in Resources */,
+				EC8828BC269ECE09009A2DC1 /* SearchViewController.xib in Resources */,
+				EC8828C0269ECE1A009A2DC1 /* FavoritesViewController.xib in Resources */,
+				EC8828B8269ECDFB009A2DC1 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,8 +358,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8828BB269ECE09009A2DC1 /* SearchViewController.swift in Sources */,
+				EC8828B7269ECDFB009A2DC1 /* HomeViewController.swift in Sources */,
+				EC5B1603269FBDBB000ACC84 /* Localizable.swift in Sources */,
+				EC5B1601269FBDBB000ACC84 /* Assets.swift in Sources */,
+				EC8828BF269ECE1A009A2DC1 /* FavoritesViewController.swift in Sources */,
 				EC882893269ECB54009A2DC1 /* AppDelegate.swift in Sources */,
 				EC8828B2269ECD07009A2DC1 /* TabBarViewController.swift in Sources */,
+				EC8828B4269ECD70009A2DC1 /* TabBarItems.swift in Sources */,
+				EC5B1602269FBDBB000ACC84 /* Fonts.swift in Sources */,
 				EC882895269ECB54009A2DC1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +374,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		EC5B15FC269FBC45000ACC84 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC5B15FB269FBC45000ACC84 /* en */,
+				EC5B15FD269FBC4A000ACC84 /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		EC88289D269ECB56009A2DC1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
