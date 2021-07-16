@@ -14,6 +14,8 @@ internal enum L10n {
   internal static let favoritesTitle = L10n.tr("Localizable", "FavoritesTitle")
   /// Home
   internal static let homeTitle = L10n.tr("Localizable", "HomeTitle")
+  /// Hot Moives
+  internal static let hotMoviesTitle = L10n.tr("Localizable", "HotMoviesTitle")
   /// Search
   internal static let searchTitle = L10n.tr("Localizable", "SearchTitle")
 }

@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="HOT_Movies" customModuleProvider="target">
             <connections>
+                <outlet property="moviesTableView" destination="3kv-51-hn9" id="Xja-6h-X1Q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,8 +18,20 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3kv-51-hn9">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="3kv-51-hn9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4Vj-KU-GxW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3kv-51-hn9" secondAttribute="trailing" id="4fk-Xh-Sen"/>
+                <constraint firstItem="3kv-51-hn9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Y3B-qn-3Sv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="3kv-51-hn9" secondAttribute="bottom" id="a7t-9h-F81"/>
+            </constraints>
             <point key="canvasLocation" x="-26.086956521739133" y="85.714285714285708"/>
         </view>
     </objects>
