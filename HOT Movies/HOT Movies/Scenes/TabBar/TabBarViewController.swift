@@ -11,25 +11,50 @@ final class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureTabBar()
+        configuewViews()
     }
     
-    private func configureTabBar() {
-        view.backgroundColor = .white
-        self.tabBar.unselectedItemTintColor = #colorLiteral(red: 0.7077005273, green: 0.7077005273, blue: 0.7077005273, alpha: 1)
-        self.tabBar.tintColor = .black
+    func configuewViews() {
+        tabBar.do {
+            $0.barTintColor = UIColor.white
+            $0.clipsToBounds = true
+        }
+        
         viewControllers = [
-            configChildNavigationController(viewController: HomeViewController(), item: TabbarItem.home.item),
-            configChildNavigationController(viewController: SearchViewController(), item: TabbarItem.search.item),
-            configChildNavigationController(viewController: FavoritesViewController(), item: TabbarItem.favorites.item)
+            createHomeNavigationController(),
+            createSearchNavigationController(),
+            createFavoritesNavigationController()
         ]
     }
     
-    private func configChildNavigationController(viewController: UIViewController, item: UITabBarItem) -> UINavigationController {
-        let navController = UINavigationController(rootViewController: viewController)
-        navController.tabBarItem = item
-        navController.navigationBar.prefersLargeTitles = true
-        return navController
+    func configureNavigationController(viewController: UIViewController, item: UITabBarItem) -> UINavigationController {
+        let navigationController = BaseNavigationController(rootViewController: viewController)
+        viewController.tabBarItem = item
+        return navigationController
     }
-
+    
+    func createHomeNavigationController() -> UINavigationController {
+        let viewController = HomeViewController()
+        viewController.tabBarItem = TabBarItems.home.item
+        let useCase = HomeUseCase()
+        let navigationController = BaseNavigationController(rootViewController: viewController)
+        let navigator = HomeNavigator(navigationController: navigationController)
+        let viewModel = HomeViewModel(navigator: navigator, useCase: useCase)
+        viewController.bindViewModel(to: viewModel)
+        return navigationController
+    }
+    
+    func createSearchNavigationController() -> UINavigationController {
+        let viewController = SearchViewController()
+        viewController.tabBarItem = TabBarItems.search.item
+        let navigationController = BaseNavigationController(rootViewController: viewController)
+        return navigationController
+    }
+    
+    func createFavoritesNavigationController() -> UINavigationController {
+        let viewController = FavoritesViewController()
+        viewController.tabBarItem = TabBarItems.favorites.item
+        let navigationController = BaseNavigationController(rootViewController: viewController)
+        return navigationController
+    }
 }

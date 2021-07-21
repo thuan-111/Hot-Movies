@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C252DD781B08454D50B87BB5 /* libPods-HOT Movies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C89C44DC20ADDA80D5FE020 /* libPods-HOT Movies.a */; };
+		EC53F1C626A56E6B0003B914 /* PageInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53F1C526A56E6B0003B914 /* PageInfoModel.swift */; };
 		EC5B15FA269FBC45000ACC84 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC5B15FC269FBC45000ACC84 /* Localizable.strings */; };
+		EC5B1601269FBDBB000ACC84 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B15FE269FBDBB000ACC84 /* Assets.swift */; };
+		EC5B1602269FBDBB000ACC84 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B15FF269FBDBB000ACC84 /* Fonts.swift */; };
+		EC5B1603269FBDBB000ACC84 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B1600269FBDBB000ACC84 /* Localizable.swift */; };
 		EC5B160F269FE3D2000ACC84 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EC5B160E269FE3D2000ACC84 /* Alamofire */; };
 		EC5B1612269FE3EB000ACC84 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = EC5B1611269FE3EB000ACC84 /* ObjectMapper */; };
 		EC5B1615269FE427000ACC84 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = EC5B1614269FE427000ACC84 /* Then */; };
@@ -22,11 +26,25 @@
 		EC5B163B26A02EAE000ACC84 /* movieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B163926A02EAE000ACC84 /* movieTableViewCell.swift */; };
 		EC5B163C26A02EAE000ACC84 /* movieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC5B163A26A02EAE000ACC84 /* movieTableViewCell.xib */; };
 		EC5B163F26A03087000ACC84 /* APIServies+getMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B163E26A03087000ACC84 /* APIServies+getMovies.swift */; };
+		EC6AA5A726A088B100103407 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6AA5A626A088B100103407 /* Bindable.swift */; };
+		EC6AA5A926A088EC00103407 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6AA5A826A088EC00103407 /* ViewModel.swift */; };
+		EC6AA5AB26A089FF00103407 /* MovieDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6AA5AA26A089FF00103407 /* MovieDetailsModel.swift */; };
+		EC6AA5AF26A08ABD00103407 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6AA5AD26A08ABD00103407 /* MovieDetailsViewController.swift */; };
+		EC6AA5B026A08ABD00103407 /* MovieDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC6AA5AE26A08ABD00103407 /* MovieDetailsViewController.xib */; };
+		EC6AA5B626A095B100103407 /* SharedSequenceConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6AA5B526A095B100103407 /* SharedSequenceConvertibleType.swift */; };
+		EC6AA5BD26A09CE700103407 /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6AA5BC26A09CE700103407 /* HomeUseCase.swift */; };
+		EC6AA5C126A0A17C00103407 /* NSObject-Rx in Frameworks */ = {isa = PBXBuildFile; productRef = EC6AA5C026A0A17C00103407 /* NSObject-Rx */; };
+		EC6AA5C326A0A2AC00103407 /* ObservableType+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6AA5C226A0A2AC00103407 /* ObservableType+.swift */; };
+		EC6AA5C526A0B18700103407 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6AA5C426A0B18700103407 /* BaseNavigationController.swift */; };
 		EC6BFD8F26A05F9300C6682D /* HomeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BFD8E26A05F9300C6682D /* HomeNavigator.swift */; };
 		EC6BFD9126A05FA400C6682D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BFD9026A05FA400C6682D /* HomeViewModel.swift */; };
-		EC8363B826A1103200642530 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8363B526A1103200642530 /* Fonts.swift */; };
-		EC8363B926A1103200642530 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8363B626A1103200642530 /* Localizable.swift */; };
-		EC8363BA26A1103200642530 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8363B726A1103200642530 /* Assets.swift */; };
+		EC7F9E2826A81DB500C11C65 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = EC7F9E2726A81DB500C11C65 /* RxDataSources */; };
+		EC7F9E2A26A81DB500C11C65 /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = EC7F9E2926A81DB500C11C65 /* Differentiator */; };
+		EC7F9E2D26A81DD700C11C65 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = EC7F9E2C26A81DD700C11C65 /* Cosmos */; };
+		EC7F9E3026A81E9B00C11C65 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EC7F9E2F26A81E9B00C11C65 /* RxSwift */; };
+		EC7F9E3226A81E9B00C11C65 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = EC7F9E3126A81E9B00C11C65 /* RxRelay */; };
+		EC7F9E3426A81E9B00C11C65 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EC7F9E3326A81E9B00C11C65 /* RxCocoa */; };
+		EC7F9E3626A81E9B00C11C65 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = EC7F9E3526A81E9B00C11C65 /* RxBlocking */; };
 		EC882893269ECB54009A2DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC882892269ECB54009A2DC1 /* AppDelegate.swift */; };
 		EC882895269ECB54009A2DC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC882894269ECB54009A2DC1 /* SceneDelegate.swift */; };
 		EC88289C269ECB56009A2DC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC88289B269ECB56009A2DC1 /* Assets.xcassets */; };
@@ -39,18 +57,19 @@
 		EC8828BC269ECE09009A2DC1 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC8828BA269ECE09009A2DC1 /* SearchViewController.xib */; };
 		EC8828BF269ECE1A009A2DC1 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8828BD269ECE1A009A2DC1 /* FavoritesViewController.swift */; };
 		EC8828C0269ECE1A009A2DC1 /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC8828BE269ECE1A009A2DC1 /* FavoritesViewController.xib */; };
-		EC8828C7269EDCE7009A2DC1 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EC8828C6269EDCE7009A2DC1 /* RxCocoa */; };
-		EC8828C9269EDCE7009A2DC1 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = EC8828C8269EDCE7009A2DC1 /* RxRelay */; };
-		EC8828CB269EDCE7009A2DC1 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EC8828CA269EDCE7009A2DC1 /* RxSwift */; };
 		EC8828D8269EEEA1009A2DC1 /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = EC8828D7269EEEA1009A2DC1 /* Localize_Swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C89C44DC20ADDA80D5FE020 /* libPods-HOT Movies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HOT Movies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C878087A077B215B87367E /* Pods-HOT Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOT Movies.release.xcconfig"; path = "Target Support Files/Pods-HOT Movies/Pods-HOT Movies.release.xcconfig"; sourceTree = "<group>"; };
+		EC53F1C526A56E6B0003B914 /* PageInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageInfoModel.swift; sourceTree = "<group>"; };
 		EC5B15F9269FBC06000ACC84 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		EC5B15FB269FBC45000ACC84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EC5B15FD269FBC4A000ACC84 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EC5B15FE269FBDBB000ACC84 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		EC5B15FF269FBDBB000ACC84 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		EC5B1600269FBDBB000ACC84 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		EC5B1620269FE53D000ACC84 /* APIServies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServies.swift; sourceTree = "<group>"; };
 		EC5B1622269FE57F000ACC84 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		EC5B1625269FE5E5000ACC84 /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
@@ -59,11 +78,17 @@
 		EC5B163926A02EAE000ACC84 /* movieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieTableViewCell.swift; sourceTree = "<group>"; };
 		EC5B163A26A02EAE000ACC84 /* movieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = movieTableViewCell.xib; sourceTree = "<group>"; };
 		EC5B163E26A03087000ACC84 /* APIServies+getMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIServies+getMovies.swift"; sourceTree = "<group>"; };
+		EC6AA5A626A088B100103407 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		EC6AA5A826A088EC00103407 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		EC6AA5AA26A089FF00103407 /* MovieDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsModel.swift; sourceTree = "<group>"; };
+		EC6AA5AD26A08ABD00103407 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		EC6AA5AE26A08ABD00103407 /* MovieDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailsViewController.xib; sourceTree = "<group>"; };
+		EC6AA5B526A095B100103407 /* SharedSequenceConvertibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SharedSequenceConvertibleType.swift; path = "HOT Movies/Extensions/SharedSequenceConvertibleType.swift"; sourceTree = SOURCE_ROOT; };
+		EC6AA5BC26A09CE700103407 /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
+		EC6AA5C226A0A2AC00103407 /* ObservableType+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+.swift"; sourceTree = "<group>"; };
+		EC6AA5C426A0B18700103407 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		EC6BFD8E26A05F9300C6682D /* HomeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigator.swift; sourceTree = "<group>"; };
 		EC6BFD9026A05FA400C6682D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		EC8363B526A1103200642530 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		EC8363B626A1103200642530 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
-		EC8363B726A1103200642530 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		EC88288F269ECB54009A2DC1 /* HOT Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HOT Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC882892269ECB54009A2DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC882894269ECB54009A2DC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,15 +112,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC8828C7269EDCE7009A2DC1 /* RxCocoa in Frameworks */,
+				EC7F9E2A26A81DB500C11C65 /* Differentiator in Frameworks */,
 				EC5B1612269FE3EB000ACC84 /* ObjectMapper in Frameworks */,
-				EC8828CB269EDCE7009A2DC1 /* RxSwift in Frameworks */,
+				EC6AA5C126A0A17C00103407 /* NSObject-Rx in Frameworks */,
 				EC5B1615269FE427000ACC84 /* Then in Frameworks */,
+				EC7F9E3626A81E9B00C11C65 /* RxBlocking in Frameworks */,
 				EC5B161B269FE497000ACC84 /* Kingfisher in Frameworks */,
 				EC8828D8269EEEA1009A2DC1 /* Localize_Swift in Frameworks */,
+				EC7F9E3026A81E9B00C11C65 /* RxSwift in Frameworks */,
+				EC7F9E2D26A81DD700C11C65 /* Cosmos in Frameworks */,
 				EC5B1618269FE453000ACC84 /* Reusable in Frameworks */,
+				EC7F9E3226A81E9B00C11C65 /* RxRelay in Frameworks */,
+				EC7F9E3426A81E9B00C11C65 /* RxCocoa in Frameworks */,
 				EC5B160F269FE3D2000ACC84 /* Alamofire in Frameworks */,
-				EC8828C9269EDCE7009A2DC1 /* RxRelay in Frameworks */,
+				EC7F9E2826A81DB500C11C65 /* RxDataSources in Frameworks */,
 				C252DD781B08454D50B87BB5 /* libPods-HOT Movies.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,10 +150,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EC2356D126A8203200446323 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		EC5B161C269FE49F000ACC84 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EC53F1C526A56E6B0003B914 /* PageInfoModel.swift */,
 				EC5B1622269FE57F000ACC84 /* MovieModel.swift */,
+				EC6AA5AA26A089FF00103407 /* MovieDetailsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,11 +212,31 @@
 			path = "Extensions APIServie";
 			sourceTree = "<group>";
 		};
-		EC8363B426A10F6300642530 /* Font */ = {
+		EC6AA5A526A088A400103407 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				EC6AA5A826A088EC00103407 /* ViewModel.swift */,
+				EC6AA5C426A0B18700103407 /* BaseNavigationController.swift */,
 			);
-			path = Font;
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EC6AA5AC26A08A9300103407 /* Movie Deltail Screen */ = {
+			isa = PBXGroup;
+			children = (
+				EC6AA5AD26A08ABD00103407 /* MovieDetailsViewController.swift */,
+				EC6AA5AE26A08ABD00103407 /* MovieDetailsViewController.xib */,
+			);
+			path = "Movie Deltail Screen";
+			sourceTree = "<group>";
+		};
+		EC6AA5BE26A09D1800103407 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC6AA5B526A095B100103407 /* SharedSequenceConvertibleType.swift */,
+				EC6AA5C226A0A2AC00103407 /* ObservableType+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		EC882886269ECB54009A2DC1 = {
@@ -202,9 +261,9 @@
 		EC882891269ECB54009A2DC1 /* HOT Movies */ = {
 			isa = PBXGroup;
 			children = (
+				EC6AA5BE26A09D1800103407 /* Extensions */,
 				EC8828AB269ECBDD009A2DC1 /* AppDelegate */,
 				EC8828AA269ECBB5009A2DC1 /* Resource */,
-				EC8828A9269ECBAC009A2DC1 /* Extensions */,
 				EC8828A8269ECB75009A2DC1 /* Platform */,
 				EC8828A7269ECB6A009A2DC1 /* Domain */,
 				EC8828A6269ECB62009A2DC1 /* Scenes */,
@@ -217,8 +276,11 @@
 		EC8828A6269ECB62009A2DC1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EC6AA5AC26A08A9300103407 /* Movie Deltail Screen */,
+				EC6AA5A526A088A400103407 /* Base */,
 				EC8828AC269ECC91009A2DC1 /* TabBar */,
 				EC8828AD269ECC9A009A2DC1 /* Home Screen */,
+				EC6AA5A626A088B100103407 /* Bindable.swift */,
 				EC8828AF269ECCC0009A2DC1 /* Search Screen */,
 				EC8828AE269ECCAB009A2DC1 /* Favorites Screen */,
 			);
@@ -241,17 +303,10 @@
 			path = Platform;
 			sourceTree = "<group>";
 		};
-		EC8828A9269ECBAC009A2DC1 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		EC8828AA269ECBB5009A2DC1 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				EC8363B426A10F6300642530 /* Font */,
+				EC2356D126A8203200446323 /* Font */,
 				EC88289B269ECB56009A2DC1 /* Assets.xcassets */,
 				EC88289D269ECB56009A2DC1 /* LaunchScreen.storyboard */,
 				EC5B15FC269FBC45000ACC84 /* Localizable.strings */,
@@ -285,6 +340,7 @@
 				EC8828B6269ECDFB009A2DC1 /* HomeViewController.xib */,
 				EC6BFD8E26A05F9300C6682D /* HomeNavigator.swift */,
 				EC6BFD9026A05FA400C6682D /* HomeViewModel.swift */,
+				EC6AA5BC26A09CE700103407 /* HomeUseCase.swift */,
 			);
 			path = "Home Screen";
 			sourceTree = "<group>";
@@ -310,9 +366,9 @@
 		EC8828CE269EE4BF009A2DC1 /* SwiftGen */ = {
 			isa = PBXGroup;
 			children = (
-				EC8363B726A1103200642530 /* Assets.swift */,
-				EC8363B526A1103200642530 /* Fonts.swift */,
-				EC8363B626A1103200642530 /* Localizable.swift */,
+				EC5B15FE269FBDBB000ACC84 /* Assets.swift */,
+				EC5B15FF269FBDBB000ACC84 /* Fonts.swift */,
+				EC5B1600269FBDBB000ACC84 /* Localizable.swift */,
 			);
 			path = SwiftGen;
 			sourceTree = "<group>";
@@ -336,15 +392,20 @@
 			);
 			name = "HOT Movies";
 			packageProductDependencies = (
-				EC8828C6269EDCE7009A2DC1 /* RxCocoa */,
-				EC8828C8269EDCE7009A2DC1 /* RxRelay */,
-				EC8828CA269EDCE7009A2DC1 /* RxSwift */,
 				EC8828D7269EEEA1009A2DC1 /* Localize_Swift */,
 				EC5B160E269FE3D2000ACC84 /* Alamofire */,
 				EC5B1611269FE3EB000ACC84 /* ObjectMapper */,
 				EC5B1614269FE427000ACC84 /* Then */,
 				EC5B1617269FE453000ACC84 /* Reusable */,
 				EC5B161A269FE497000ACC84 /* Kingfisher */,
+				EC6AA5C026A0A17C00103407 /* NSObject-Rx */,
+				EC7F9E2726A81DB500C11C65 /* RxDataSources */,
+				EC7F9E2926A81DB500C11C65 /* Differentiator */,
+				EC7F9E2C26A81DD700C11C65 /* Cosmos */,
+				EC7F9E2F26A81E9B00C11C65 /* RxSwift */,
+				EC7F9E3126A81E9B00C11C65 /* RxRelay */,
+				EC7F9E3326A81E9B00C11C65 /* RxCocoa */,
+				EC7F9E3526A81E9B00C11C65 /* RxBlocking */,
 			);
 			productName = "HOT Movies";
 			productReference = EC88288F269ECB54009A2DC1 /* HOT Movies.app */;
@@ -375,13 +436,16 @@
 			);
 			mainGroup = EC882886269ECB54009A2DC1;
 			packageReferences = (
-				EC8828C5269EDCE7009A2DC1 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				EC8828D6269EEEA1009A2DC1 /* XCRemoteSwiftPackageReference "Localize-Swift" */,
 				EC5B160D269FE3D2000ACC84 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				EC5B1610269FE3EB000ACC84 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 				EC5B1613269FE427000ACC84 /* XCRemoteSwiftPackageReference "Then" */,
 				EC5B1616269FE453000ACC84 /* XCRemoteSwiftPackageReference "Reusable" */,
 				EC5B1619269FE497000ACC84 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				EC6AA5BF26A0A17C00103407 /* XCRemoteSwiftPackageReference "NSObject-Rx" */,
+				EC7F9E2626A81DB500C11C65 /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				EC7F9E2B26A81DD700C11C65 /* XCRemoteSwiftPackageReference "Cosmos" */,
+				EC7F9E2E26A81E9B00C11C65 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = EC882890269ECB54009A2DC1 /* Products */;
 			projectDirPath = "";
@@ -401,6 +465,7 @@
 				EC88289F269ECB56009A2DC1 /* LaunchScreen.storyboard in Resources */,
 				EC5B15FA269FBC45000ACC84 /* Localizable.strings in Resources */,
 				EC88289C269ECB56009A2DC1 /* Assets.xcassets in Resources */,
+				EC6AA5B026A08ABD00103407 /* MovieDetailsViewController.xib in Resources */,
 				EC8828BC269ECE09009A2DC1 /* SearchViewController.xib in Resources */,
 				EC8828C0269ECE1A009A2DC1 /* FavoritesViewController.xib in Resources */,
 				EC8828B8269ECDFB009A2DC1 /* HomeViewController.xib in Resources */,
@@ -458,24 +523,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC6BFD9126A05FA400C6682D /* HomeViewModel.swift in Sources */,
+				EC6AA5AB26A089FF00103407 /* MovieDetailsModel.swift in Sources */,
 				EC5B1623269FE57F000ACC84 /* MovieModel.swift in Sources */,
-				EC8363BA26A1103200642530 /* Assets.swift in Sources */,
 				EC8828BB269ECE09009A2DC1 /* SearchViewController.swift in Sources */,
 				EC5B1621269FE53D000ACC84 /* APIServies.swift in Sources */,
 				EC8828B7269ECDFB009A2DC1 /* HomeViewController.swift in Sources */,
+				EC6AA5A726A088B100103407 /* Bindable.swift in Sources */,
+				EC6AA5BD26A09CE700103407 /* HomeUseCase.swift in Sources */,
 				EC6BFD8F26A05F9300C6682D /* HomeNavigator.swift in Sources */,
+				EC5B1603269FBDBB000ACC84 /* Localizable.swift in Sources */,
+				EC5B1601269FBDBB000ACC84 /* Assets.swift in Sources */,
 				EC5B163B26A02EAE000ACC84 /* movieTableViewCell.swift in Sources */,
-				EC8363B826A1103200642530 /* Fonts.swift in Sources */,
+				EC6AA5C326A0A2AC00103407 /* ObservableType+.swift in Sources */,
 				EC8828BF269ECE1A009A2DC1 /* FavoritesViewController.swift in Sources */,
 				EC5B162B269FEC9F000ACC84 /* MovieURLs.swift in Sources */,
+				EC53F1C626A56E6B0003B914 /* PageInfoModel.swift in Sources */,
 				EC882893269ECB54009A2DC1 /* AppDelegate.swift in Sources */,
+				EC6AA5C526A0B18700103407 /* BaseNavigationController.swift in Sources */,
+				EC6AA5AF26A08ABD00103407 /* MovieDetailsViewController.swift in Sources */,
+				EC6AA5A926A088EC00103407 /* ViewModel.swift in Sources */,
 				EC5B1629269FE633000ACC84 /* APIKey.swift in Sources */,
 				EC5B1626269FE5E5000ACC84 /* BaseError.swift in Sources */,
 				EC8828B2269ECD07009A2DC1 /* TabBarViewController.swift in Sources */,
 				EC8828B4269ECD70009A2DC1 /* TabBarItems.swift in Sources */,
 				EC5B163F26A03087000ACC84 /* APIServies+getMovies.swift in Sources */,
-				EC8363B926A1103200642530 /* Localizable.swift in Sources */,
+				EC5B1602269FBDBB000ACC84 /* Fonts.swift in Sources */,
 				EC882895269ECB54009A2DC1 /* SceneDelegate.swift in Sources */,
+				EC6AA5B626A095B100103407 /* SharedSequenceConvertibleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,7 +799,31 @@
 				minimumVersion = 6.3.0;
 			};
 		};
-		EC8828C5269EDCE7009A2DC1 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		EC6AA5BF26A0A17C00103407 /* XCRemoteSwiftPackageReference "NSObject-Rx" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/NSObject-Rx";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.1;
+			};
+		};
+		EC7F9E2626A81DB500C11C65 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		EC7F9E2B26A81DD700C11C65 /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 23.0.0;
+			};
+		};
+		EC7F9E2E26A81E9B00C11C65 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
 			requirement = {
@@ -769,20 +867,45 @@
 			package = EC5B1619269FE497000ACC84 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
-		EC8828C6269EDCE7009A2DC1 /* RxCocoa */ = {
+		EC6AA5C026A0A17C00103407 /* NSObject-Rx */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EC8828C5269EDCE7009A2DC1 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
+			package = EC6AA5BF26A0A17C00103407 /* XCRemoteSwiftPackageReference "NSObject-Rx" */;
+			productName = "NSObject-Rx";
 		};
-		EC8828C8269EDCE7009A2DC1 /* RxRelay */ = {
+		EC7F9E2726A81DB500C11C65 /* RxDataSources */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EC8828C5269EDCE7009A2DC1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = EC7F9E2626A81DB500C11C65 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+		EC7F9E2926A81DB500C11C65 /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC7F9E2626A81DB500C11C65 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		EC7F9E2C26A81DD700C11C65 /* Cosmos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC7F9E2B26A81DD700C11C65 /* XCRemoteSwiftPackageReference "Cosmos" */;
+			productName = Cosmos;
+		};
+		EC7F9E2F26A81E9B00C11C65 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC7F9E2E26A81E9B00C11C65 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		EC7F9E3126A81E9B00C11C65 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC7F9E2E26A81E9B00C11C65 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxRelay;
 		};
-		EC8828CA269EDCE7009A2DC1 /* RxSwift */ = {
+		EC7F9E3326A81E9B00C11C65 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EC8828C5269EDCE7009A2DC1 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
+			package = EC7F9E2E26A81E9B00C11C65 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		EC7F9E3526A81E9B00C11C65 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC7F9E2E26A81E9B00C11C65 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
 		};
 		EC8828D7269EEEA1009A2DC1 /* Localize_Swift */ = {
 			isa = XCSwiftPackageProductDependency;

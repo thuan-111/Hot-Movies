@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "Cosmos",
+        "repositoryURL": "https://github.com/evgenyneu/Cosmos",
+        "state": {
+          "branch": null,
+          "revision": "cce521e734d0090494bd4afab5fd2e2f2465c1af",
+          "version": "23.0.0"
+        }
+      },
+      {
         "package": "Kingfisher",
         "repositoryURL": "https://github.com/onevcat/Kingfisher",
         "state": {
@@ -29,6 +38,15 @@
         }
       },
       {
+        "package": "NSObject-Rx",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/NSObject-Rx",
+        "state": {
+          "branch": null,
+          "revision": "9d1967fb5f501f77d2ecfeb4f569a5f65a69a33c",
+          "version": "5.2.1"
+        }
+      },
+      {
         "package": "ObjectMapper",
         "repositoryURL": "https://github.com/tristanhimmelman/ObjectMapper",
         "state": {
@@ -44,6 +62,15 @@
           "branch": null,
           "revision": "86cd17aa27e80d20bfe2ea57dd08958cf64664f4",
           "version": "4.1.1"
+        }
+      },
+      {
+        "package": "RxDataSources",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/RxDataSources",
+        "state": {
+          "branch": null,
+          "revision": "e4627ac4f5a8dc10719030561801825c443acfec",
+          "version": "5.0.1"
         }
       },
       {

@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import UIKit
+
+protocol HomeNavigatorType {
+    func pushToDetails(details: Movie)
+}
+
+struct HomeNavigator: HomeNavigatorType {
+    
+    unowned let navigationController: UINavigationController
+    
+    func pushToDetails(details: Movie) {
+        let viewController = MovieDetailsViewController()
+        navigationController.pushViewController(viewController, animated: true)
+    }
+}
