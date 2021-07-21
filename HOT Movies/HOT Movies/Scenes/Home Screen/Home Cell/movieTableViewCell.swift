@@ -49,7 +49,7 @@ final class movieTableViewCell: UITableViewCell, NibReusable {
         trailerlabel.do {
             $0.text = "Trailer"
             $0.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-            $0.font = UIFont.boldSystemFont(ofSize: 18)
+            $0.font = UIFont.boldSystemFont(ofSize: 19)
             $0.textAlignment = .center
             $0.frame = gradientView.bounds
         }

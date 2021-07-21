@@ -9,28 +9,6 @@ import Foundation
 import ObjectMapper
 import Then
 
-struct Movies {
-    var results: [Movie]
-}
-
-extension Movies {
-    init() {
-        self.init(
-            results: [Movie]()
-        )
-    }
-}
-
-extension Movies: Mappable {
-    init?(map: Map) {
-        self.init()
-    }
-    
-    mutating func mapping(map: Map) {
-        results <- map["results"]
-    }
-}
-
 struct Movie {
     var idMovie: Int
     var title: String

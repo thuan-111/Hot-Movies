@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-enum TabbarItem {
+enum TabBarItems {
     
     case home
     case search

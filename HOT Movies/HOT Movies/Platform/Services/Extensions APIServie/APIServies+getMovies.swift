@@ -12,11 +12,20 @@ import RxCocoa
 extension APIServices {
     func getMovies(page: Int) -> Observable<[Movie]> {
         let urlRequest = MovieURLs.shared.allMovieURL(page: page)
-        return request(URL: urlRequest, responseType: Movies.self)
+        return request(URL: urlRequest, responseType: PageInfo.self)
             .map { (response) -> [Movie] in
                 let movie = response.results
                 return movie
             }
             .catchAndReturn([])
     }
+    
+    func getPageInfo(page: Int) -> Observable<Int> {
+        let urlRequest = MovieURLs.shared.allMovieURL(page: page)
+        return request(URL: urlRequest, responseType: PageInfo.self)
+            .map { (response) -> Int in
+                return response.page
+            }
+    }
+    
 }
