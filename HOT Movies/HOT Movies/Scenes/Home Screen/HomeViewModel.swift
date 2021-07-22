@@ -46,9 +46,7 @@ extension HomeViewModel: ViewModel {
             .withLatestFrom(dataSource.asDriver()) { indexPath, movies in
                 return movies[indexPath.row]
             }
-            .do(onNext: { movie in
-                navigator.pushToDetails(details: movie)
-            })
+            .do(onNext: navigator.pushToDetails(details:))
             .mapToVoid()
         
         return Output(currentMovies: currentMovies, movies: dataSource.asDriver(), selected: selected)

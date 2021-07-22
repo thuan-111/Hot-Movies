@@ -25,7 +25,7 @@ enum TabBarItems {
                                 image: Asset.unTappedSearch.image,
                                 selectedImage: Asset.tappedSearch.image.withRenderingMode(.alwaysOriginal))
         case .favorites:
-            return UITabBarItem(title: L10n.searchTitle,
+            return UITabBarItem(title: L10n.favoritesTitle,
                                 image: Asset.unTappedFavorites.image,
                                 selectedImage: Asset.tappedFavorites.image.withRenderingMode(.alwaysOriginal))
         }

@@ -45,6 +45,12 @@
 		EC7F9E3226A81E9B00C11C65 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = EC7F9E3126A81E9B00C11C65 /* RxRelay */; };
 		EC7F9E3426A81E9B00C11C65 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EC7F9E3326A81E9B00C11C65 /* RxCocoa */; };
 		EC7F9E3626A81E9B00C11C65 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = EC7F9E3526A81E9B00C11C65 /* RxBlocking */; };
+		EC83384C26A9168E00B9AEDB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC83384A26A9168E00B9AEDB /* SearchViewController.swift */; };
+		EC83384D26A9168E00B9AEDB /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC83384B26A9168E00B9AEDB /* SearchViewController.xib */; };
+		EC83384F26A9169C00B9AEDB /* SearchNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC83384E26A9169C00B9AEDB /* SearchNavigator.swift */; };
+		EC83385126A916A800B9AEDB /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC83385026A916A800B9AEDB /* SearchViewModel.swift */; };
+		EC83385326A916C500B9AEDB /* SearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC83385226A916C500B9AEDB /* SearchUseCase.swift */; };
+		EC83385526A9173800B9AEDB /* APIServices+getSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC83385426A9173800B9AEDB /* APIServices+getSearchResults.swift */; };
 		EC882893269ECB54009A2DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC882892269ECB54009A2DC1 /* AppDelegate.swift */; };
 		EC882895269ECB54009A2DC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC882894269ECB54009A2DC1 /* SceneDelegate.swift */; };
 		EC88289C269ECB56009A2DC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC88289B269ECB56009A2DC1 /* Assets.xcassets */; };
@@ -53,11 +59,10 @@
 		EC8828B4269ECD70009A2DC1 /* TabBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8828B3269ECD70009A2DC1 /* TabBarItems.swift */; };
 		EC8828B7269ECDFB009A2DC1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8828B5269ECDFB009A2DC1 /* HomeViewController.swift */; };
 		EC8828B8269ECDFB009A2DC1 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC8828B6269ECDFB009A2DC1 /* HomeViewController.xib */; };
-		EC8828BB269ECE09009A2DC1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8828B9269ECE09009A2DC1 /* SearchViewController.swift */; };
-		EC8828BC269ECE09009A2DC1 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC8828BA269ECE09009A2DC1 /* SearchViewController.xib */; };
 		EC8828BF269ECE1A009A2DC1 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8828BD269ECE1A009A2DC1 /* FavoritesViewController.swift */; };
 		EC8828C0269ECE1A009A2DC1 /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC8828BE269ECE1A009A2DC1 /* FavoritesViewController.xib */; };
 		EC8828D8269EEEA1009A2DC1 /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = EC8828D7269EEEA1009A2DC1 /* Localize_Swift */; };
+		ECE08B6A26A9B402004CA370 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE08B6926A9B402004CA370 /* MoviesRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +94,12 @@
 		EC6AA5C426A0B18700103407 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		EC6BFD8E26A05F9300C6682D /* HomeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigator.swift; sourceTree = "<group>"; };
 		EC6BFD9026A05FA400C6682D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EC83384A26A9168E00B9AEDB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		EC83384B26A9168E00B9AEDB /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		EC83384E26A9169C00B9AEDB /* SearchNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigator.swift; sourceTree = "<group>"; };
+		EC83385026A916A800B9AEDB /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		EC83385226A916C500B9AEDB /* SearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUseCase.swift; sourceTree = "<group>"; };
+		EC83385426A9173800B9AEDB /* APIServices+getSearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIServices+getSearchResults.swift"; sourceTree = "<group>"; };
 		EC88288F269ECB54009A2DC1 /* HOT Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HOT Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC882892269ECB54009A2DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC882894269ECB54009A2DC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,11 +110,10 @@
 		EC8828B3269ECD70009A2DC1 /* TabBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItems.swift; sourceTree = "<group>"; };
 		EC8828B5269ECDFB009A2DC1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EC8828B6269ECDFB009A2DC1 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		EC8828B9269ECE09009A2DC1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		EC8828BA269ECE09009A2DC1 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		EC8828BD269ECE1A009A2DC1 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		EC8828BE269ECE1A009A2DC1 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
 		EC8828CD269EE3DF009A2DC1 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		ECE08B6926A9B402004CA370 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
 		F37EF06E83102B91F4D1BFF4 /* Pods-HOT Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOT Movies.debug.xcconfig"; path = "Target Support Files/Pods-HOT Movies/Pods-HOT Movies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				EC5B163E26A03087000ACC84 /* APIServies+getMovies.swift */,
+				EC83385426A9173800B9AEDB /* APIServices+getSearchResults.swift */,
 			);
 			path = "Extensions APIServie";
 			sourceTree = "<group>";
@@ -237,6 +248,18 @@
 				EC6AA5C226A0A2AC00103407 /* ObservableType+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EC83384926A9164D00B9AEDB /* Search Screen */ = {
+			isa = PBXGroup;
+			children = (
+				EC83384A26A9168E00B9AEDB /* SearchViewController.swift */,
+				EC83384B26A9168E00B9AEDB /* SearchViewController.xib */,
+				EC83385026A916A800B9AEDB /* SearchViewModel.swift */,
+				EC83384E26A9169C00B9AEDB /* SearchNavigator.swift */,
+				EC83385226A916C500B9AEDB /* SearchUseCase.swift */,
+			);
+			path = "Search Screen";
 			sourceTree = "<group>";
 		};
 		EC882886269ECB54009A2DC1 = {
@@ -276,12 +299,12 @@
 		EC8828A6269ECB62009A2DC1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EC83384926A9164D00B9AEDB /* Search Screen */,
 				EC6AA5AC26A08A9300103407 /* Movie Deltail Screen */,
 				EC6AA5A526A088A400103407 /* Base */,
 				EC8828AC269ECC91009A2DC1 /* TabBar */,
 				EC8828AD269ECC9A009A2DC1 /* Home Screen */,
 				EC6AA5A626A088B100103407 /* Bindable.swift */,
-				EC8828AF269ECCC0009A2DC1 /* Search Screen */,
 				EC8828AE269ECCAB009A2DC1 /* Favorites Screen */,
 			);
 			path = Scenes;
@@ -291,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				EC5B161C269FE49F000ACC84 /* Models */,
+				ECE08B6826A9B2E5004CA370 /* Repositorys */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -354,15 +378,6 @@
 			path = "Favorites Screen";
 			sourceTree = "<group>";
 		};
-		EC8828AF269ECCC0009A2DC1 /* Search Screen */ = {
-			isa = PBXGroup;
-			children = (
-				EC8828B9269ECE09009A2DC1 /* SearchViewController.swift */,
-				EC8828BA269ECE09009A2DC1 /* SearchViewController.xib */,
-			);
-			path = "Search Screen";
-			sourceTree = "<group>";
-		};
 		EC8828CE269EE4BF009A2DC1 /* SwiftGen */ = {
 			isa = PBXGroup;
 			children = (
@@ -371,6 +386,14 @@
 				EC5B1600269FBDBB000ACC84 /* Localizable.swift */,
 			);
 			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		ECE08B6826A9B2E5004CA370 /* Repositorys */ = {
+			isa = PBXGroup;
+			children = (
+				ECE08B6926A9B402004CA370 /* MoviesRepository.swift */,
+			);
+			path = Repositorys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,8 +489,8 @@
 				EC5B15FA269FBC45000ACC84 /* Localizable.strings in Resources */,
 				EC88289C269ECB56009A2DC1 /* Assets.xcassets in Resources */,
 				EC6AA5B026A08ABD00103407 /* MovieDetailsViewController.xib in Resources */,
-				EC8828BC269ECE09009A2DC1 /* SearchViewController.xib in Resources */,
 				EC8828C0269ECE1A009A2DC1 /* FavoritesViewController.xib in Resources */,
+				EC83384D26A9168E00B9AEDB /* SearchViewController.xib in Resources */,
 				EC8828B8269ECDFB009A2DC1 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,10 +547,12 @@
 			files = (
 				EC6BFD9126A05FA400C6682D /* HomeViewModel.swift in Sources */,
 				EC6AA5AB26A089FF00103407 /* MovieDetailsModel.swift in Sources */,
+				EC83384F26A9169C00B9AEDB /* SearchNavigator.swift in Sources */,
 				EC5B1623269FE57F000ACC84 /* MovieModel.swift in Sources */,
-				EC8828BB269ECE09009A2DC1 /* SearchViewController.swift in Sources */,
 				EC5B1621269FE53D000ACC84 /* APIServies.swift in Sources */,
 				EC8828B7269ECDFB009A2DC1 /* HomeViewController.swift in Sources */,
+				EC83385526A9173800B9AEDB /* APIServices+getSearchResults.swift in Sources */,
+				EC83385126A916A800B9AEDB /* SearchViewModel.swift in Sources */,
 				EC6AA5A726A088B100103407 /* Bindable.swift in Sources */,
 				EC6AA5BD26A09CE700103407 /* HomeUseCase.swift in Sources */,
 				EC6BFD8F26A05F9300C6682D /* HomeNavigator.swift in Sources */,
@@ -535,6 +560,7 @@
 				EC5B1601269FBDBB000ACC84 /* Assets.swift in Sources */,
 				EC5B163B26A02EAE000ACC84 /* movieTableViewCell.swift in Sources */,
 				EC6AA5C326A0A2AC00103407 /* ObservableType+.swift in Sources */,
+				EC83385326A916C500B9AEDB /* SearchUseCase.swift in Sources */,
 				EC8828BF269ECE1A009A2DC1 /* FavoritesViewController.swift in Sources */,
 				EC5B162B269FEC9F000ACC84 /* MovieURLs.swift in Sources */,
 				EC53F1C626A56E6B0003B914 /* PageInfoModel.swift in Sources */,
@@ -544,7 +570,9 @@
 				EC6AA5A926A088EC00103407 /* ViewModel.swift in Sources */,
 				EC5B1629269FE633000ACC84 /* APIKey.swift in Sources */,
 				EC5B1626269FE5E5000ACC84 /* BaseError.swift in Sources */,
+				ECE08B6A26A9B402004CA370 /* MoviesRepository.swift in Sources */,
 				EC8828B2269ECD07009A2DC1 /* TabBarViewController.swift in Sources */,
+				EC83384C26A9168E00B9AEDB /* SearchViewController.swift in Sources */,
 				EC8828B4269ECD70009A2DC1 /* TabBarItems.swift in Sources */,
 				EC5B163F26A03087000ACC84 /* APIServies+getMovies.swift in Sources */,
 				EC5B1602269FBDBB000ACC84 /* Fonts.swift in Sources */,
