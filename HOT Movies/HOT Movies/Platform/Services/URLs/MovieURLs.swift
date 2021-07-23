@@ -23,8 +23,8 @@ struct MovieURLs {
         return baseURL + path + APIKey.key + "&language=\(Localize.currentLanguage())" + "&page=\(page)"
     }
     
-    func movieDetailURL(idMovie: Int) -> String {
-        return baseURL + "/movie/\(idMovie)?" + APIKey.key + "&language=\(Localize.currentLanguage())"
+    func movieDetailsURL(movieId: Int) -> String {
+        return baseURL + "/movie/\(movieId)?" + APIKey.key + "&language=\(Localize.currentLanguage())&append_to_response=videos,similar,credits"
     }
     
     func imageURL(imagePath: String) -> String {
@@ -33,5 +33,9 @@ struct MovieURLs {
     
     func searchURL(query: String) -> String {
         return baseURL + "/search/movie?" + APIKey.key + "&query=\(query)" + "&language=\(Localize.currentLanguage())"
+    }
+    
+    func youtubeTrailerPath(key: String) -> String {
+        return "https://www.youtube.com/watch?v=\(key)"
     }
 }

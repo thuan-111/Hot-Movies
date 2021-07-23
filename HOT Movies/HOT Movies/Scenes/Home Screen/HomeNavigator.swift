@@ -18,6 +18,9 @@ struct HomeNavigator: HomeNavigatorType {
     
     func pushToDetails(details: Movie) {
         let viewController = MovieDetailsViewController()
+        let useCase = MovieDetailsUseCase(movieRepository: MoviesRepository())
+        let viewModel = MovieDetailsViewModel(useCase: useCase, movie: details)
+        viewController.bindViewModel(to: viewModel)
         navigationController.pushViewController(viewController, animated: true)
     }
 }

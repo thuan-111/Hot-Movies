@@ -28,6 +28,7 @@ internal enum Asset {
   internal static let unTappedFavorites = ImageAsset(name: "unTappedFavorites")
   internal static let unTappedHome = ImageAsset(name: "unTappedHome")
   internal static let unTappedSearch = ImageAsset(name: "unTappedSearch")
+  internal static let playIcon = ImageAsset(name: "playIcon")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
