@@ -36,7 +36,7 @@ final class TabBarViewController: UITabBarController {
     func createHomeNavigationController() -> UINavigationController {
         let viewController = HomeViewController()
         viewController.tabBarItem = TabBarItems.home.item
-        let useCase = HomeUseCase()
+        let useCase = HomeUseCase(moviesRepository: MoviesRepository())
         let navigationController = BaseNavigationController(rootViewController: viewController)
         let navigator = HomeNavigator(navigationController: navigationController)
         let viewModel = HomeViewModel(navigator: navigator, useCase: useCase)
@@ -47,7 +47,11 @@ final class TabBarViewController: UITabBarController {
     func createSearchNavigationController() -> UINavigationController {
         let viewController = SearchViewController()
         viewController.tabBarItem = TabBarItems.search.item
+        let useCase = SearchUseCase(moviesRepository: MoviesRepository())
         let navigationController = BaseNavigationController(rootViewController: viewController)
+        let navigator = SearchNavigator(navigationController: navigationController)
+        let viewModel = SearchViewModel(navigator: navigator, useCase: useCase)
+        viewController.bindViewModel(to: viewModel)
         return navigationController
     }
     

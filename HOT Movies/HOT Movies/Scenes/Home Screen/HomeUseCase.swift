@@ -14,7 +14,10 @@ protocol HomeUseCaseType {
 }
 
 struct HomeUseCase: HomeUseCaseType {
+    
+    let moviesRepository: MoviesRepositoryType
+    
     func getMovies(page: Int) -> Observable<[Movie]> {
-        return APIServices.shared.getMovies(page: page)
+        return moviesRepository.fetchRemoteMovies(page: page)
     }
 }

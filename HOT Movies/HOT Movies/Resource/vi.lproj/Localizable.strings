@@ -8,3 +8,5 @@
 "HomeTitle" = "Home";
 "SearchTitle" = "Search";
 "FavoritesTitle" = "Favorites";
+"HotMoviesTitle" = "Phim Hay";
+"SearchPlaceholder" = "Tìm kiếm phim ...";
