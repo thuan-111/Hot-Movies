@@ -23,6 +23,7 @@ final class movieTableViewCell: UITableViewCell, NibReusable {
     }
     
     private func configureView() {
+        selectionStyle = .none
         posterImageView.layer.cornerRadius = 15
         rateAverageLabel.layer.cornerRadius = 5
         rateAverageLabel.textColor = .white

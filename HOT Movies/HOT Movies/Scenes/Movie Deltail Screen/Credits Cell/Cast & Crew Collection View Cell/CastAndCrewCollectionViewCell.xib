@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CastAndCrewCollectionViewCell" customModule="HOT_Movies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="173" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="173" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SIE-ES-pXr">
+                        <rect key="frame" x="0.0" y="0.0" width="173" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="QC5-DV-WRT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Robert ABC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPc-Pp-PgO">
+                        <rect key="frame" x="5" y="160" width="163" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hPc-Pp-PgO" secondAttribute="trailing" constant="5" id="8V9-eo-myA"/>
+                <constraint firstItem="hPc-Pp-PgO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="BLx-6q-RRi"/>
+                <constraint firstItem="hPc-Pp-PgO" firstAttribute="top" secondItem="SIE-ES-pXr" secondAttribute="bottom" constant="10" id="GsH-bp-cK1"/>
+                <constraint firstItem="SIE-ES-pXr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="a2l-tJ-KcK"/>
+                <constraint firstAttribute="trailing" secondItem="SIE-ES-pXr" secondAttribute="trailing" id="cSb-z1-ted"/>
+                <constraint firstItem="SIE-ES-pXr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iHg-pb-xbf"/>
+            </constraints>
+            <size key="customSize" width="173" height="250"/>
+            <connections>
+                <outlet property="avatarImage" destination="SIE-ES-pXr" id="Wtc-oY-hhb"/>
+                <outlet property="nameLabel" destination="hPc-Pp-PgO" id="1yy-nR-B3j"/>
+            </connections>
+            <point key="canvasLocation" x="-102.17391304347827" y="143.97321428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

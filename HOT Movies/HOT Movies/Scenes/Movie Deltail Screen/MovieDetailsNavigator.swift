@@ -1,18 +1,18 @@
 //
-//  HomeNavigator.swift
+//  MovieDetailsNavigator.swift
 //  HOT Movies
 //
-//  Created by Thuận Nguyễn Văn on 15/07/2021.
+//  Created by Thuận Nguyễn Văn on 28/07/2021.
 //
 
 import Foundation
 import UIKit
 
-protocol HomeNavigatorType {
+protocol MovieDetailsNavigatorType {
     func pushToDetails(details: Movie)
 }
 
-struct HomeNavigator: HomeNavigatorType {
+struct MovieDetailsNavigator: MovieDetailsNavigatorType {
     
     unowned let navigationController: UINavigationController
     
