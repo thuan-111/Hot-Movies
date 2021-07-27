@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="244" id="KGk-i7-Jjw" customClass="MovieDescriptionTableViewCell" customModule="HOT_Movies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="244"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="244"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2vj-Zr-nC2">
+                        <rect key="frame" x="20" y="10" width="363" height="120"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="4sL-Ks-XLZ"/>
+                        </constraints>
+                        <string key="text">The Avengers must stop Thanos, an intergalactic warlord, from getting his hands on all the infinity stones. However, Thanos is prepared to go to any lengths to carry out his insane plan.</string>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhA-23-csC">
+                        <rect key="frame" x="152" y="140" width="99" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="vfw-M0-8rg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <state key="normal" title="show more">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="didTapShowMoreButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="v3R-bh-TfG"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="JhA-23-csC" secondAttribute="bottom" id="IIo-TZ-mUE"/>
+                    <constraint firstItem="JhA-23-csC" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="SRs-aq-tgw"/>
+                    <constraint firstItem="2vj-Zr-nC2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="YPP-j2-oM6"/>
+                    <constraint firstItem="JhA-23-csC" firstAttribute="top" secondItem="2vj-Zr-nC2" secondAttribute="bottom" constant="10" id="b3G-eh-St6"/>
+                    <constraint firstAttribute="trailing" secondItem="2vj-Zr-nC2" secondAttribute="trailing" constant="20" id="fMI-f7-0U1"/>
+                    <constraint firstItem="2vj-Zr-nC2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="l8T-8x-f4E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionHeightContraint" destination="4sL-Ks-XLZ" id="uhu-6f-N4m"/>
+                <outlet property="descriptionTextView" destination="2vj-Zr-nC2" id="vnh-hJ-wYw"/>
+                <outlet property="showMoreButton" destination="JhA-23-csC" id="lgu-7w-Ilj"/>
+            </connections>
+            <point key="canvasLocation" x="168.84057971014494" y="227.67857142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
