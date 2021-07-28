@@ -10,17 +10,13 @@ import Reusable
 import RxCocoa
 import RxSwift
 
-protocol MovieDescriptionTableViewCellDelegate: class {
-    func reloadCellSize()
-}
-
 final class MovieDescriptionTableViewCell: UITableViewCell, NibReusable {
     
     @IBOutlet private weak var descriptionHeightContraint: NSLayoutConstraint!
     @IBOutlet private weak var descriptionTextView: UITextView!
     @IBOutlet private weak var showMoreButton: UIButton!
     
-    weak var delegate: MovieDescriptionTableViewCellDelegate?
+    var showMoreButtonTapped: (() -> Void)?
     
     private var textIsFullSize = false
     
@@ -43,7 +39,7 @@ final class MovieDescriptionTableViewCell: UITableViewCell, NibReusable {
     @IBAction func didTapShowMoreButton(_ sender: Any) {
         textIsFullSize = !textIsFullSize
         reloadTextViewStatus()
-        delegate?.reloadCellSize()
+        showMoreButtonTapped?()
     }
     
     private func reloadTextViewStatus() {

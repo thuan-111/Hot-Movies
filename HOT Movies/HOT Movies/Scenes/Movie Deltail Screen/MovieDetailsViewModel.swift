@@ -13,15 +13,18 @@ import NSObject_Rx
 struct MovieDetailsViewModel {
     
     let useCase: MovieDetailsUseCaseType
+    let navigator: MovieDetailsNavigator
     let movie: Movie
     
     struct Input {
         let loadTrigger: Driver<Void>
+        let selectedSimilarTrigger: Driver<Movie>
     }
     
     struct Output {
         let title: Driver<String>
         let details: Driver<[DetailsSectionModel]>
+        let selectedSimilar: Driver<Void>
     }
     
     func transform(_ input: Input) -> Output {
@@ -34,15 +37,19 @@ struct MovieDetailsViewModel {
                 return self.useCase.getMovieDetails(movieId: self.movie.idMovie)
                     .asDriverOnErrorJustComplete()
             }
-            .map {
-                [.detail(items: [
-                        .info(model: $0),
-                        .description(model: self.movie.overview),
-                        .castAndCrew(model: $0.credits),
-                        .similar(model: $0.similar.results)
-                ])]
+            .map { movieDetails -> [DetailsSectionModel] in
+                return [.detail(items: [
+                            .info(model: movieDetails),
+                            .description(model: self.movie.overview),
+                            .castAndCrew(model: movieDetails.credits),
+                            .similar(model: movieDetails.similar.results)
+                    ])]
             }
         
-        return Output(title: title, details: details)
+        let selectedSimilar = input.selectedSimilarTrigger
+            .do(onNext: navigator.pushToDetails(details:))
+            .mapToVoid()
+        
+        return Output(title: title, details: details, selectedSimilar: selectedSimilar)
     }
 }

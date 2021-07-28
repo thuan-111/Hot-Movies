@@ -10,10 +10,6 @@ import Reusable
 import Kingfisher
 import Cosmos
 
-protocol MovieInfosTableViewCellDelegate: class {
-    func playYouTube(video: VideoModel?)
-}
-
 final class MovieInfosTableViewCell: UITableViewCell, NibReusable {
 
     @IBOutlet private weak var movieTitleLabel: UILabel!
@@ -25,7 +21,6 @@ final class MovieInfosTableViewCell: UITableViewCell, NibReusable {
     @IBOutlet private weak var rateIndexLabel: UILabel!
     @IBOutlet private weak var playButton: UIButton!
     
-    weak var delegate: MovieInfosTableViewCellDelegate?
     private var movieDetail = MovieDetailsModel()
     
     override func awakeFromNib() {
@@ -43,8 +38,7 @@ final class MovieInfosTableViewCell: UITableViewCell, NibReusable {
     }
     
     @IBAction func didTapPlayButton(_ sender: Any) {
-        let trailerInfo = movieDetail.videos.results.first
-        delegate?.playYouTube(video: trailerInfo)
+        
     }
     
     func configureCell(movie: MovieDetailsModel) {
