@@ -20,15 +20,30 @@ struct FavoritesViewModel {
 extension FavoritesViewModel: ViewModel {
     
     struct Input {
-        let loadTrigger: Driver<Int>
+        let loadTrigger: Driver<Void>
         let selectTrigger: Driver<IndexPath>
     }
     
     struct Output {
-        
+        let movie: Driver<[Movie]>
+        let selected: Driver<Void>
     }
     
     func transform(_ input: Input) -> Output {
-        return Output()
+        
+        let movie = input.loadTrigger
+            .flatMapLatest { _ in
+                return self.useCase.getFavoriteMovies()
+                    .asDriverOnErrorJustComplete()
+            }
+        
+        let selected = input.selectTrigger
+            .withLatestFrom(movie) { indexPath, movies in
+                return movies[indexPath.row]
+            }
+            .do(onNext: navigator.pushToDetails(details:))
+            .mapToVoid()
+        
+        return Output(movie: movie, selected: selected)
     }
 }

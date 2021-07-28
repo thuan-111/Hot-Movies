@@ -6,11 +6,19 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 protocol FavoritesUseCaseType {
     
+    func getFavoriteMovies() -> Observable<[Movie]>
 }
 
 struct FavoritesUseCase: FavoritesUseCaseType {
     
+    let favoritesRepository: FavoritesRepositoryType
+    
+    func getFavoriteMovies() -> Observable<[Movie]> {
+        return favoritesRepository.fetchAllFavoriteMovie()
+    }
 }

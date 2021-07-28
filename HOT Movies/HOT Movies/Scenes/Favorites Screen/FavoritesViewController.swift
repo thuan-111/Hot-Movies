@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
+import NSObject_Rx
 
 final class FavoritesViewController: UIViewController {
 
@@ -42,6 +45,22 @@ final class FavoritesViewController: UIViewController {
 extension FavoritesViewController: Bindable {
     
     func bindViewModel() {
+        let input = FavoritesViewModel.Input(loadTrigger: Driver.just(()),
+                                             selectTrigger: moviesTableView.rx.itemSelected.asDriver())
+        let output = viewModel.transform(input)
         
+        output.movie
+            .drive(moviesTableView.rx.items) { moviesTableView, index, movie in
+                let indexPath = IndexPath(index: index)
+                let cell = moviesTableView.dequeueReusableCell(for: indexPath,
+                                                               cellType: movieTableViewCell.self)
+                cell.configureCell(movie: movie)
+                return cell
+            }
+            .disposed(by: rx.disposeBag)
+        
+        output.selected
+            .drive()
+            .disposed(by: rx.disposeBag)
     }
 }

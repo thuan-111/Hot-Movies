@@ -442,11 +442,11 @@
 		EC8828AE269ECCAB009A2DC1 /* Favorites Screen */ = {
 			isa = PBXGroup;
 			children = (
-				ECC5C48C26B16674000225B2 /* FavoritesNavigator.swift */,
-				ECC5C48E26B16674000225B2 /* FavoritesUseCase.swift */,
 				ECC5C48B26B16674000225B2 /* FavoritesViewController.swift */,
 				ECC5C48A26B16674000225B2 /* FavoritesViewController.xib */,
 				ECC5C48D26B16674000225B2 /* FavoritesViewModel.swift */,
+				ECC5C48C26B16674000225B2 /* FavoritesNavigator.swift */,
+				ECC5C48E26B16674000225B2 /* FavoritesUseCase.swift */,
 			);
 			path = "Favorites Screen";
 			sourceTree = "<group>";
