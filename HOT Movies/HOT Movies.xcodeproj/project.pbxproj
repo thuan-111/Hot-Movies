@@ -36,6 +36,7 @@
 		EC6AA5C526A0B18700103407 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6AA5C426A0B18700103407 /* BaseNavigationController.swift */; };
 		EC6BFD8F26A05F9300C6682D /* HomeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BFD8E26A05F9300C6682D /* HomeNavigator.swift */; };
 		EC6BFD9126A05FA400C6682D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BFD9026A05FA400C6682D /* HomeViewModel.swift */; };
+		EC6F97D826B253F100BFA1F8 /* DatabaseErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6F97D726B253F100BFA1F8 /* DatabaseErrors.swift */; };
 		EC7F9E2826A81DB500C11C65 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = EC7F9E2726A81DB500C11C65 /* RxDataSources */; };
 		EC7F9E2A26A81DB500C11C65 /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = EC7F9E2926A81DB500C11C65 /* Differentiator */; };
 		EC7F9E2D26A81DD700C11C65 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = EC7F9E2C26A81DD700C11C65 /* Cosmos */; };
@@ -83,6 +84,10 @@
 		ECC5C49126B16675000225B2 /* FavoritesNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5C48C26B16674000225B2 /* FavoritesNavigator.swift */; };
 		ECC5C49226B16675000225B2 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5C48D26B16674000225B2 /* FavoritesViewModel.swift */; };
 		ECC5C49326B16675000225B2 /* FavoritesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5C48E26B16674000225B2 /* FavoritesUseCase.swift */; };
+		ECC5C4A226B17919000225B2 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5C4A126B17919000225B2 /* DatabaseManager.swift */; };
+		ECC5C4A526B17966000225B2 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = ECC5C4A426B17966000225B2 /* SQLite */; };
+		ECC5C4A726B17E71000225B2 /* FavoriteMovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5C4A626B17E71000225B2 /* FavoriteMovieEntity.swift */; };
+		ECC5C4A926B1AFE6000225B2 /* FavoritesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5C4A826B1AFE6000225B2 /* FavoritesRepository.swift */; };
 		ECCD391E26AE9EB500186A9B /* APIServies+getMovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCD391D26AE9EB500186A9B /* APIServies+getMovieDetails.swift */; };
 		ECCD392026AEA3AB00186A9B /* VideosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCD391F26AEA3AB00186A9B /* VideosModel.swift */; };
 		ECCD392226AEA3BB00186A9B /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCD392126AEA3BB00186A9B /* VideoModel.swift */; };
@@ -116,6 +121,7 @@
 		EC6AA5C426A0B18700103407 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		EC6BFD8E26A05F9300C6682D /* HomeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigator.swift; sourceTree = "<group>"; };
 		EC6BFD9026A05FA400C6682D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EC6F97D726B253F100BFA1F8 /* DatabaseErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseErrors.swift; sourceTree = "<group>"; };
 		EC83384A26A9168E00B9AEDB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		EC83384B26A9168E00B9AEDB /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		EC83384E26A9169C00B9AEDB /* SearchNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigator.swift; sourceTree = "<group>"; };
@@ -158,6 +164,9 @@
 		ECC5C48C26B16674000225B2 /* FavoritesNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesNavigator.swift; sourceTree = "<group>"; };
 		ECC5C48D26B16674000225B2 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		ECC5C48E26B16674000225B2 /* FavoritesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesUseCase.swift; sourceTree = "<group>"; };
+		ECC5C4A126B17919000225B2 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		ECC5C4A626B17E71000225B2 /* FavoriteMovieEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMovieEntity.swift; sourceTree = "<group>"; };
+		ECC5C4A826B1AFE6000225B2 /* FavoritesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRepository.swift; sourceTree = "<group>"; };
 		ECCD391D26AE9EB500186A9B /* APIServies+getMovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIServies+getMovieDetails.swift"; sourceTree = "<group>"; };
 		ECCD391F26AEA3AB00186A9B /* VideosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosModel.swift; sourceTree = "<group>"; };
 		ECCD392126AEA3BB00186A9B /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
@@ -178,6 +187,7 @@
 				EC5B161B269FE497000ACC84 /* Kingfisher in Frameworks */,
 				EC8828D8269EEEA1009A2DC1 /* Localize_Swift in Frameworks */,
 				EC7F9E3026A81E9B00C11C65 /* RxSwift in Frameworks */,
+				ECC5C4A526B17966000225B2 /* SQLite in Frameworks */,
 				EC7F9E2D26A81DD700C11C65 /* Cosmos in Frameworks */,
 				EC5B1618269FE453000ACC84 /* Reusable in Frameworks */,
 				EC7F9E3226A81E9B00C11C65 /* RxRelay in Frameworks */,
@@ -383,6 +393,7 @@
 		EC8828A8269ECB75009A2DC1 /* Platform */ = {
 			isa = PBXGroup;
 			children = (
+				ECC5C4A026B178AE000225B2 /* DataBaseManager */,
 				EC5B161F269FE511000ACC84 /* Services */,
 			);
 			path = Platform;
@@ -508,10 +519,21 @@
 			path = "Cast & Crew Collection View Cell";
 			sourceTree = "<group>";
 		};
+		ECC5C4A026B178AE000225B2 /* DataBaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5C4A126B17919000225B2 /* DatabaseManager.swift */,
+				ECC5C4A626B17E71000225B2 /* FavoriteMovieEntity.swift */,
+				EC6F97D726B253F100BFA1F8 /* DatabaseErrors.swift */,
+			);
+			path = DataBaseManager;
+			sourceTree = "<group>";
+		};
 		ECE08B6826A9B2E5004CA370 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
 				ECE08B6926A9B402004CA370 /* MoviesRepository.swift */,
+				ECC5C4A826B1AFE6000225B2 /* FavoritesRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -549,6 +571,7 @@
 				EC7F9E3126A81E9B00C11C65 /* RxRelay */,
 				EC7F9E3326A81E9B00C11C65 /* RxCocoa */,
 				EC7F9E3526A81E9B00C11C65 /* RxBlocking */,
+				ECC5C4A426B17966000225B2 /* SQLite */,
 			);
 			productName = "HOT Movies";
 			productReference = EC88288F269ECB54009A2DC1 /* HOT Movies.app */;
@@ -589,6 +612,7 @@
 				EC7F9E2626A81DB500C11C65 /* XCRemoteSwiftPackageReference "RxDataSources" */,
 				EC7F9E2B26A81DD700C11C65 /* XCRemoteSwiftPackageReference "Cosmos" */,
 				EC7F9E2E26A81E9B00C11C65 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				ECC5C4A326B17966000225B2 /* XCRemoteSwiftPackageReference "SQLite" */,
 			);
 			productRefGroup = EC882890269ECB54009A2DC1 /* Products */;
 			projectDirPath = "";
@@ -678,6 +702,7 @@
 				EC83384F26A9169C00B9AEDB /* SearchNavigator.swift in Sources */,
 				EC9DF69D26AA9A0F0010B204 /* MovieDescriptionTableViewCell.swift in Sources */,
 				EC5B1623269FE57F000ACC84 /* MovieModel.swift in Sources */,
+				EC6F97D826B253F100BFA1F8 /* DatabaseErrors.swift in Sources */,
 				EC5B1621269FE53D000ACC84 /* APIServies.swift in Sources */,
 				EC8A868926B136160025B2A2 /* MovieDetailsNavigator.swift in Sources */,
 				ECC5C49326B16675000225B2 /* FavoritesUseCase.swift in Sources */,
@@ -699,12 +724,14 @@
 				EC6AA5C326A0A2AC00103407 /* ObservableType+.swift in Sources */,
 				ECCD391E26AE9EB500186A9B /* APIServies+getMovieDetails.swift in Sources */,
 				EC9DF6AB26AAA3FE0010B204 /* CastAndCrewModel.swift in Sources */,
+				ECC5C4A226B17919000225B2 /* DatabaseManager.swift in Sources */,
 				EC9DF6A426AA9A3D0010B204 /* SimilarMoviesTableViewCell.swift in Sources */,
 				EC83385326A916C500B9AEDB /* SearchUseCase.swift in Sources */,
 				EC9DF68C26AA99950010B204 /* MovieSectionModel.swift in Sources */,
 				ECC5C49226B16675000225B2 /* FavoritesViewModel.swift in Sources */,
 				EC9DF68E26AA99950010B204 /* MovieDetailsViewController.swift in Sources */,
 				EC5B162B269FEC9F000ACC84 /* MovieURLs.swift in Sources */,
+				ECC5C4A726B17E71000225B2 /* FavoriteMovieEntity.swift in Sources */,
 				EC53F1C626A56E6B0003B914 /* PageInfoModel.swift in Sources */,
 				EC882893269ECB54009A2DC1 /* AppDelegate.swift in Sources */,
 				EC6AA5C526A0B18700103407 /* BaseNavigationController.swift in Sources */,
@@ -712,6 +739,7 @@
 				EC88762426AAEEFB00C92EA6 /* SimilarMovieCollectionViewCell.swift in Sources */,
 				EC5B1629269FE633000ACC84 /* APIKey.swift in Sources */,
 				EC9DF69926AA99FC0010B204 /* MovieInfosTableViewCell.swift in Sources */,
+				ECC5C4A926B1AFE6000225B2 /* FavoritesRepository.swift in Sources */,
 				EC5B1626269FE5E5000ACC84 /* BaseError.swift in Sources */,
 				ECE08B6A26A9B402004CA370 /* MoviesRepository.swift in Sources */,
 				EC8828B2269ECD07009A2DC1 /* TabBarViewController.swift in Sources */,
@@ -1011,6 +1039,14 @@
 				minimumVersion = 3.2.0;
 			};
 		};
+		ECC5C4A326B17966000225B2 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.12.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1083,6 +1119,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EC8828D6269EEEA1009A2DC1 /* XCRemoteSwiftPackageReference "Localize-Swift" */;
 			productName = Localize_Swift;
+		};
+		ECC5C4A426B17966000225B2 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECC5C4A326B17966000225B2 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
