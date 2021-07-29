@@ -6,10 +6,15 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
+import NSObject_Rx
 
 final class FavoritesViewController: UIViewController {
 
     @IBOutlet private weak var moviesTableView: UITableView!
+    
+    var movieWillRemove = PublishSubject<Movie>()
     
     var viewModel: FavoritesViewModel!
     
@@ -31,7 +36,7 @@ final class FavoritesViewController: UIViewController {
     
     private func configureTableView() {
         moviesTableView.do {
-            $0.register(cellType: movieTableViewCell.self)
+            $0.register(cellType: FavoritesTableViewCell.self)
             $0.rowHeight = 200
             $0.separatorStyle = .none
             $0.selectionFollowsFocus = false
@@ -42,6 +47,26 @@ final class FavoritesViewController: UIViewController {
 extension FavoritesViewController: Bindable {
     
     func bindViewModel() {
+        let input = FavoritesViewModel.Input(loadTrigger: Driver.just(()),
+                                             selectTrigger: moviesTableView.rx.itemSelected
+                                                .asDriver(),
+                                             deleteTrigger: movieWillRemove
+                                                .asDriver(onErrorJustReturn: Movie()))
+        let output = viewModel.transform(input)
         
+        output.movie
+            .drive(moviesTableView.rx.items) { [weak self] (moviesTableView, index, movie) in
+                let indexPath = IndexPath(index: index)
+                let cell = moviesTableView.dequeueReusableCell(for: indexPath,
+                                                               cellType: FavoritesTableViewCell.self)
+                cell.removeButtonTapped = { self?.movieWillRemove.onNext($0) }
+                cell.configureCell(movie: movie)
+                return cell
+            }
+            .disposed(by: rx.disposeBag)
+        
+        output.selected
+            .drive()
+            .disposed(by: rx.disposeBag)
     }
 }
