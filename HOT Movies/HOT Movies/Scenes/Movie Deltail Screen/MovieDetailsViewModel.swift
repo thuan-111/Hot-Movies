@@ -34,13 +34,13 @@ struct MovieDetailsViewModel {
         
         let details = input.loadTrigger
             .flatMapLatest { _ in
-                return self.useCase.getMovieDetails(movieId: self.movie.idMovie)
+                return self.useCase.getMovieDetails(movieId: self.movie.id)
                     .asDriverOnErrorJustComplete()
             }
             .map { movieDetails -> [DetailsSectionModel] in
                 return [.detail(items: [
                             .info(model: movieDetails),
-                            .description(model: self.movie.overview),
+                            .description(model: movieDetails.overview),
                             .castAndCrew(model: movieDetails.credits),
                             .similar(model: movieDetails.similar.results)
                     ])]
