@@ -98,22 +98,23 @@ extension FavoriteMovieEntity {
         }
     }
     
-    public func deleteFavoriteMovieAt(movieId: Int) -> Completable {
+    public func deleteFavoriteMovieAt(movieId: Int) -> Observable<[Movie]> {
         
-        return Completable.create { completable in
+        return Observable.create { observable in
             guard let connection = DatabaseManager.shared.connection else {
                 print("Delete favorite movie failed, connetion = Nil")
-                completable(.error(DatabaseErrors.connectionError))
+                observable.onError(DatabaseErrors.connectionError)
                 return Disposables.create()
             }
             
             do {
                 let row = tableFavoriteMovies.filter(id == movieId)
                 try connection.run(row.delete())
-                completable(.completed)
+                let rows = try connection.prepare(tableFavoriteMovies)
+                observable.onNext(rowsToMovies(rows: rows) ?? [])
             } catch {
                 print("Delete favorites movie failed: \(error)")
-                completable(.error(DatabaseErrors.deleteError))
+                observable.onError(DatabaseErrors.deleteError)
             }
             return Disposables.create()
         }

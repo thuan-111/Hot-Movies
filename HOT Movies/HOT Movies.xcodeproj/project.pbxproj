@@ -447,8 +447,8 @@
 				EC5B162C26A02B44000ACC84 /* Home Cell */,
 				EC8828B5269ECDFB009A2DC1 /* HomeViewController.swift */,
 				EC8828B6269ECDFB009A2DC1 /* HomeViewController.xib */,
-				EC6BFD8E26A05F9300C6682D /* HomeNavigator.swift */,
 				EC6BFD9026A05FA400C6682D /* HomeViewModel.swift */,
+				EC6BFD8E26A05F9300C6682D /* HomeNavigator.swift */,
 				EC6AA5BC26A09CE700103407 /* HomeUseCase.swift */,
 			);
 			path = "Home Screen";
@@ -457,11 +457,11 @@
 		EC8828AE269ECCAB009A2DC1 /* Favorites Screen */ = {
 			isa = PBXGroup;
 			children = (
+				EC6F97E226B2A35200BFA1F8 /* FavoritesViewController.swift */,
+				EC6F97E426B2A35200BFA1F8 /* FavoritesViewModel.swift */,
 				EC6F97E326B2A35200BFA1F8 /* FavoritesNavigator.swift */,
 				EC6F97E126B2A35200BFA1F8 /* FavoritesUseCase.swift */,
-				EC6F97E226B2A35200BFA1F8 /* FavoritesViewController.swift */,
 				EC6F97E526B2A35200BFA1F8 /* FavoritesViewController.xib */,
-				EC6F97E426B2A35200BFA1F8 /* FavoritesViewModel.swift */,
 				EC6F97E026B2A30E00BFA1F8 /* Favorites Cell */,
 			);
 			path = "Favorites Screen";
