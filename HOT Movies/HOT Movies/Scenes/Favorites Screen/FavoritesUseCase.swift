@@ -12,6 +12,8 @@ import RxCocoa
 protocol FavoritesUseCaseType {
     
     func getFavoriteMovies() -> Observable<[Movie]>
+    
+    func deleteFavoriteMovieAt(movieId: Int) -> Observable<[Movie]>
 }
 
 struct FavoritesUseCase: FavoritesUseCaseType {
@@ -20,5 +22,9 @@ struct FavoritesUseCase: FavoritesUseCaseType {
     
     func getFavoriteMovies() -> Observable<[Movie]> {
         return favoritesRepository.fetchAllFavoriteMovie()
+    }
+    
+    func deleteFavoriteMovieAt(movieId: Int) -> Observable<[Movie]> {
+        return favoritesRepository.deleteFavoriteMovieAt(movieId: movieId)
     }
 }

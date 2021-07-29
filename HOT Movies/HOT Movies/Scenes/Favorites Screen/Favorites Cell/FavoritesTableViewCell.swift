@@ -42,6 +42,8 @@ final class FavoritesTableViewCell: UITableViewCell, NibReusable {
         self.movie = movie
         let imageUrlString = MovieURLs.shared.imageURL(imagePath: movie.posterPath)
         let imageUrl = URL(string: imageUrlString)
+        movieName.text = movie.title
+        releaseDataLabel.text = movie.releaseDate
         posterImageView.kf.setImage(with: imageUrl)
         rateAverageLabel.text = String(movie.voteAverage)
     }

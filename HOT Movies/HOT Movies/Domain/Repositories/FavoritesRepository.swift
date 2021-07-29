@@ -15,7 +15,7 @@ protocol FavoritesRepositoryType {
     
     func fetchAllFavoriteMovie() -> Observable<[Movie]>
     
-    func deleteFavoriteMovieAt(movieId: Int) -> Completable
+    func deleteFavoriteMovieAt(movieId: Int) -> Observable<[Movie]>
 }
 
 struct FavoritesRepository: FavoritesRepositoryType {
@@ -28,7 +28,7 @@ struct FavoritesRepository: FavoritesRepositoryType {
         return FavoriteMovieEntity.shared.fetchAllFavoriteMovie()
     }
     
-    func deleteFavoriteMovieAt(movieId: Int) -> Completable {
-       return FavoriteMovieEntity.shared.deleteFavoriteMovieAt(movieId: movieId)
+    func deleteFavoriteMovieAt(movieId: Int) -> Observable<[Movie]> {
+        return FavoriteMovieEntity.shared.deleteFavoriteMovieAt(movieId: movieId)
     }
 }

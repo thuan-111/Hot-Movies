@@ -54,6 +54,10 @@ extension FavoritesViewController: Bindable {
                                                 .asDriver(onErrorJustReturn: Movie()))
         let output = viewModel.transform(input)
         
+        output.loadData
+            .drive()
+            .disposed(by: rx.disposeBag)
+        
         output.movie
             .drive(moviesTableView.rx.items) { [weak self] (moviesTableView, index, movie) in
                 let indexPath = IndexPath(index: index)
@@ -66,6 +70,10 @@ extension FavoritesViewController: Bindable {
             .disposed(by: rx.disposeBag)
         
         output.selected
+            .drive()
+            .disposed(by: rx.disposeBag)
+        
+        output.deleted
             .drive()
             .disposed(by: rx.disposeBag)
     }

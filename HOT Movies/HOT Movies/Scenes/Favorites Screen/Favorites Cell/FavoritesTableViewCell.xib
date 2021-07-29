@@ -27,7 +27,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Black Widow" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DW-PR-6wc">
-                        <rect key="frame" x="170" y="20" width="132" height="30"/>
+                        <rect key="frame" x="170" y="20" width="243" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="vqu-7y-ppU"/>
                         </constraints>
@@ -78,6 +78,7 @@
                     <constraint firstItem="1DW-PR-6wc" firstAttribute="leading" secondItem="ZBy-Ln-gxc" secondAttribute="trailing" constant="25" id="lag-lS-swJ"/>
                     <constraint firstItem="ZBy-Ln-gxc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="mQz-C6-y0u"/>
                     <constraint firstItem="LUa-bV-fZG" firstAttribute="leading" secondItem="cqU-5b-Nxq" secondAttribute="trailing" constant="10" id="s4J-h2-X7M"/>
+                    <constraint firstAttribute="trailing" secondItem="1DW-PR-6wc" secondAttribute="trailing" constant="15" id="x6w-Yt-nmV"/>
                     <constraint firstItem="cqU-5b-Nxq" firstAttribute="leading" secondItem="ZBy-Ln-gxc" secondAttribute="trailing" constant="30" id="xUv-yn-3gw"/>
                 </constraints>
             </tableViewCellContentView>
