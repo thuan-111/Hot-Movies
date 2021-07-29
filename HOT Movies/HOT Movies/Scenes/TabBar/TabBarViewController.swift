@@ -60,7 +60,7 @@ final class TabBarViewController: UITabBarController {
         viewController.tabBarItem = TabBarItems.favorites.item
         let navigationController = BaseNavigationController(rootViewController: viewController)
         viewController.tabBarItem = TabBarItems.favorites.item
-        let useCase = FavoritesUseCase()
+        let useCase = FavoritesUseCase(favoritesRepository: FavoritesRepository())
         let navigator = FavoritesNavigator(navigationController: navigationController)
         let viewModel = FavoritesViewModel(navigator: navigator, useCase: useCase)
         viewController.bindViewModel(to: viewModel)
