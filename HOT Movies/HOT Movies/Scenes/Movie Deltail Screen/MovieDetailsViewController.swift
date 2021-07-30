@@ -21,7 +21,10 @@ final class MovieDetailsViewController: UIViewController {
     
     var viewModel: MovieDetailsViewModel!
 
-    private var similarMovie = PublishSubject<Movie>()
+    private let similarMovie = PublishSubject<Movie>()
+    private let likeButtonTrigger = PublishSubject<Bool>()
+    private let loadTrigger = BehaviorSubject<Void>(value: ())
+    
     private var dataSource: DataSource!
     
     let infoRowHeight: CGFloat = 350
@@ -30,6 +33,11 @@ final class MovieDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configeTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadTrigger.onNext(())
     }
     
     private func configeTableView() {
@@ -57,22 +65,30 @@ final class MovieDetailsViewController: UIViewController {
 extension MovieDetailsViewController: Bindable {
     func bindViewModel() {
         
-        let input = MovieDetailsViewModel.Input(loadTrigger: Driver.just(()),
+        let input = MovieDetailsViewModel.Input(loadTrigger: loadTrigger
+                                                    .asDriver(onErrorJustReturn: ()),
                                                 selectedSimilarTrigger: similarMovie
-                                                    .asDriver(onErrorJustReturn: Movie()))
-        
+                                                    .asDriver(onErrorJustReturn: Movie()),
+                                                likeTrigger: likeButtonTrigger
+                                                    .asDriver(onErrorJustReturn: false))
         let output = viewModel.transform(input)
         
         output.title
             .drive(self.rx.title)
             .disposed(by: rx.disposeBag)
-        output.details
+        
+        output.detailsAndLiked
             .drive(movieDetailsTableView.rx.items(dataSource: dataSource))
             .disposed(by: rx.disposeBag)
+        
         output.selectedSimilar
             .drive()
             .disposed(by: rx.disposeBag)
         
+        output.voidDrivers.forEach {
+            $0.drive()
+                .disposed(by: rx.disposeBag)
+        }
     }
 }
 
@@ -95,10 +111,11 @@ extension MovieDetailsViewController {
     private var configureCell: DataSource.ConfigureCell {
         return { [weak self] (dataSource, tableView, indexPath, _) in
             switch dataSource[indexPath] {
-            case .info(let model):
+            case .info(let model, let likedStatus):
                 let cell = tableView.dequeueReusableCell(for: indexPath,
                                                          cellType: MovieInfosTableViewCell.self)
-                cell.configureCell(movie: model)
+                cell.likeButtonTapped = { self?.likeButtonTrigger.onNext($0) }
+                cell.configureCell(movie: model, likedStatus: likedStatus)
                 return cell
             case .description(let model):
                 let cell = tableView.dequeueReusableCell(for: indexPath,

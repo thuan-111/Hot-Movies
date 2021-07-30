@@ -16,7 +16,7 @@ enum DetailsSectionModel {
 }
 
 enum SectionItems {
-    case info(model: MovieDetailsModel)
+    case info(model: MovieDetailsModel, likedStatus: Bool)
     case description(model: String)
     case castAndCrew(model: CreditModel)
     case similar(model: [Movie])

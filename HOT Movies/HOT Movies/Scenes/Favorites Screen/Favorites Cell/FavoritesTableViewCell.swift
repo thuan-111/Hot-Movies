@@ -45,6 +45,7 @@ final class FavoritesTableViewCell: UITableViewCell, NibReusable {
         movieName.text = movie.title
         releaseDataLabel.text = movie.releaseDate
         posterImageView.kf.setImage(with: imageUrl)
-        rateAverageLabel.text = String(movie.voteAverage)
+        let voteAverageFormatted = Float(Int(movie.voteAverage * 10)) / 10.0
+        rateAverageLabel.text = String(voteAverageFormatted)
     }
 }

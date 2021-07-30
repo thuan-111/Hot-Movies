@@ -18,7 +18,8 @@ struct MovieDetailsNavigator: MovieDetailsNavigatorType {
     
     func pushToDetails(details: Movie) {
         let viewController = MovieDetailsViewController()
-        let useCase = MovieDetailsUseCase(movieRepository: MoviesRepository())
+        let useCase = MovieDetailsUseCase(movieRepository: MoviesRepository(),
+                                          favoritesRepository: FavoritesRepository())
         let navigator = MovieDetailsNavigator(navigationController: navigationController)
         let viewModel = MovieDetailsViewModel(useCase: useCase, navigator: navigator, movie: details)
         viewController.bindViewModel(to: viewModel)

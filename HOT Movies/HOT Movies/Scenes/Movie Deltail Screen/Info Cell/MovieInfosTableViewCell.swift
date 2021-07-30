@@ -9,6 +9,8 @@ import UIKit
 import Reusable
 import Kingfisher
 import Cosmos
+import RxCocoa
+import RxSwift
 
 final class MovieInfosTableViewCell: UITableViewCell, NibReusable {
 
@@ -21,7 +23,9 @@ final class MovieInfosTableViewCell: UITableViewCell, NibReusable {
     @IBOutlet private weak var rateIndexLabel: UILabel!
     @IBOutlet private weak var playButton: UIButton!
     
-    private var movieDetail = MovieDetailsModel()
+    var likeButtonTapped: ((Bool) -> Void)?
+    
+    private var isLiked = false
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,18 +41,24 @@ final class MovieInfosTableViewCell: UITableViewCell, NibReusable {
         playButton.tintColor = .white
     }
     
-    @IBAction func didTapPlayButton(_ sender: Any) {
-        
+    private func configureLikeButton(isLiked: Bool) {
+        likeButton.tintColor = isLiked ? Asset.likedColor.color : Asset.unLikedColor.color
     }
     
-    func configureCell(movie: MovieDetailsModel) {
-        movieDetail = movie
+    @IBAction func didTapLikeButton(_ sender: Any) {
+        likeButtonTapped?(isLiked)
+    }
+    
+    func configureCell(movie: MovieDetailsModel, likedStatus: Bool) {
         let posterUrl = URL(string: MovieURLs.shared.imageURL(imagePath: movie.posterPath))
         let backdropUrl = URL(string: MovieURLs.shared.imageURL(imagePath: movie.backdropPath))
         posterImage.kf.setImage(with: posterUrl)
         backdropImage.kf.setImage(with: backdropUrl)
         movieTitleLabel.text = movie.title
         cosmosView.rating = Double(movie.voteAverage / 2)
-        rateIndexLabel.text = "\(movie.voteAverage)/10"
+        let voteAverageFormatted = Float(Int(movie.voteAverage * 10)) / 10.0
+        rateIndexLabel.text = "\(voteAverageFormatted)/10"
+        isLiked = likedStatus
+        configureLikeButton(isLiked: isLiked)
     }
 }

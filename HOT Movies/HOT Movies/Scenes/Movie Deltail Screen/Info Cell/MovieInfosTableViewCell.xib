@@ -56,6 +56,9 @@
                         <state key="normal" image="heart.fill" catalog="system">
                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                         </state>
+                        <connections>
+                            <action selector="didTapLikeButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dtO-fw-7Qu"/>
+                        </connections>
                     </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Qb-IL-EbE" customClass="CosmosView" customModule="Cosmos">
                         <rect key="frame" x="157" y="292" width="120" height="40"/>
@@ -96,9 +99,6 @@
                             <imageReference key="image" image="play.circle" catalog="system" symbolScale="large"/>
                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                         </state>
-                        <connections>
-                            <action selector="didTapPlayButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jXW-6W-2Of"/>
-                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -126,7 +126,7 @@
             <connections>
                 <outlet property="backdropImage" destination="htE-VJ-ruH" id="iwx-GG-KL9"/>
                 <outlet property="cosmosView" destination="4Qb-IL-EbE" id="CyG-Ce-mI9"/>
-                <outlet property="likeButton" destination="AgU-xj-shv" id="8uL-Ae-ZFJ"/>
+                <outlet property="likeButton" destination="AgU-xj-shv" id="S3M-ic-c3a"/>
                 <outlet property="movieTimeLabel" destination="vqA-Ag-HTi" id="Jju-3c-NOL"/>
                 <outlet property="movieTitleLabel" destination="eTk-px-cfC" id="7e3-T6-RlP"/>
                 <outlet property="playButton" destination="f6S-G0-bOB" id="XFI-3o-gSb"/>

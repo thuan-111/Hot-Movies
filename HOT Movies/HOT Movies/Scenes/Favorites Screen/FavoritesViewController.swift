@@ -14,7 +14,8 @@ final class FavoritesViewController: UIViewController {
 
     @IBOutlet private weak var moviesTableView: UITableView!
     
-    var movieWillRemove = PublishSubject<Movie>()
+    private let movieWillRemove = PublishSubject<Movie>()
+    private let loadDataTrigger = PublishSubject<Void>()
     
     var viewModel: FavoritesViewModel!
     
@@ -23,6 +24,11 @@ final class FavoritesViewController: UIViewController {
         configureView()
         configureNavigationBar()
         configureTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadDataTrigger.onNext(())
     }
     
     private func configureView() {
@@ -47,7 +53,8 @@ final class FavoritesViewController: UIViewController {
 extension FavoritesViewController: Bindable {
     
     func bindViewModel() {
-        let input = FavoritesViewModel.Input(loadTrigger: Driver.just(()),
+        let input = FavoritesViewModel.Input(loadTrigger: loadDataTrigger
+                                                .asDriver(onErrorJustReturn: ()),
                                              selectTrigger: moviesTableView.rx.itemSelected
                                                 .asDriver(),
                                              deleteTrigger: movieWillRemove
