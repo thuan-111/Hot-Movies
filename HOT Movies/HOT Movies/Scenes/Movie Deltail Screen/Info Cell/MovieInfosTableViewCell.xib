@@ -99,6 +99,9 @@
                             <imageReference key="image" image="play.circle" catalog="system" symbolScale="large"/>
                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                         </state>
+                        <connections>
+                            <action selector="didTapPlayButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0Rh-V0-LTY"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
