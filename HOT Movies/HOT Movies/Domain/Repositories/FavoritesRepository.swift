@@ -16,6 +16,12 @@ protocol FavoritesRepositoryType {
     func fetchAllFavoriteMovie() -> Observable<[Movie]>
     
     func deleteFavoriteMovieAt(movieId: Int) -> Observable<[Movie]>
+    
+    func checkForExistence(movieId: Int) -> Observable<Bool>
+    
+    func addMovie(movie: Movie) -> Observable<Bool>
+    
+    func deleteMovie(movieId: Int) -> Observable<Bool>
 }
 
 struct FavoritesRepository: FavoritesRepositoryType {
@@ -30,5 +36,17 @@ struct FavoritesRepository: FavoritesRepositoryType {
     
     func deleteFavoriteMovieAt(movieId: Int) -> Observable<[Movie]> {
         return FavoriteMovieEntity.shared.deleteFavoriteMovieAt(movieId: movieId)
+    }
+    
+    func checkForExistence(movieId: Int) -> Observable<Bool> {
+        return FavoriteMovieEntity.shared.checkForExistStatus(movieId: movieId)
+    }
+    
+    func addMovie(movie: Movie) -> Observable<Bool> {
+        return FavoriteMovieEntity.shared.addMovie(movie: movie)
+    }
+    
+    func deleteMovie(movieId: Int) -> Observable<Bool> {
+        return FavoriteMovieEntity.shared.deleteMovie(movieId: movieId)
     }
 }

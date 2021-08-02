@@ -12,4 +12,5 @@ enum DatabaseErrors: Error {
     case fetchError
     case addError
     case deleteError
+    case checkExistError
 }

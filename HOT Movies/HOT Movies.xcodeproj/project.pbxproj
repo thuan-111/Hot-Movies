@@ -312,7 +312,7 @@
 				EC9DF69526AA99D70010B204 /* Similar Movie Cell */,
 				EC9DF69426AA99C20010B204 /* Credits Cell */,
 				EC9DF69326AA99B80010B204 /* Description Cell */,
-				EC9DF69126AA999A0010B204 /* Movie Info Cell */,
+				EC9DF69126AA999A0010B204 /* Info Cell */,
 			);
 			path = "Movie Deltail Screen";
 			sourceTree = "<group>";
@@ -486,13 +486,13 @@
 			path = "Similar Movie CollectionView Cell";
 			sourceTree = "<group>";
 		};
-		EC9DF69126AA999A0010B204 /* Movie Info Cell */ = {
+		EC9DF69126AA999A0010B204 /* Info Cell */ = {
 			isa = PBXGroup;
 			children = (
 				EC9DF69826AA99FC0010B204 /* MovieInfosTableViewCell.swift */,
 				EC9DF69626AA99F20010B204 /* MovieInfosTableViewCell.xib */,
 			);
-			path = "Movie Info Cell";
+			path = "Info Cell";
 			sourceTree = "<group>";
 		};
 		EC9DF69326AA99B80010B204 /* Description Cell */ = {

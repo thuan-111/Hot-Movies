@@ -76,7 +76,37 @@ extension FavoriteMovieEntity {
             }
             return Disposables.create()
         }
-
+    }
+    
+    public func addMovie(movie: Movie) -> Observable<Bool> {
+        Observable.create { observable in
+            guard let connection = DatabaseManager.shared.connection else {
+                print("Add new movie failed, connetion = Nil")
+                observable.onError(DatabaseErrors.connectionError)
+                return Disposables.create()
+            }
+            
+            do {
+                let insert = tableFavoriteMovies.insert(id <- movie.id,
+                                                        title <- movie.title,
+                                                        backdropPath <- movie.backdropPath,
+                                                        posterPath <- movie.posterPath,
+                                                        releaseDate <- movie.releaseDate,
+                                                        voteAverage <- movie.voteAverage)
+                let insertCode = try connection.run(insert)
+                print("Insert Successfully. Id = \(movie.id)")
+                if insertCode != 0 {
+                    observable.onNext(true)
+                    observable.onCompleted()
+                } else {
+                    observable.onError(DatabaseErrors.addError)
+                }
+            } catch {
+                print("Failed to insert new movie:\(error)")
+                observable.onError(DatabaseErrors.addError)
+            }
+            return Disposables.create()
+        }
     }
     
     public func fetchAllFavoriteMovie() -> Observable<[Movie]> {
@@ -118,6 +148,58 @@ extension FavoriteMovieEntity {
             }
             return Disposables.create()
         }
+    }
+    
+    public func deleteMovie(movieId: Int) -> Observable<Bool> {
+        return Observable.create { observable in
+            guard let connection = DatabaseManager.shared.connection else {
+                print("Delete favorite movie failed, connetion = Nil")
+                observable.onError(DatabaseErrors.connectionError)
+                return Disposables.create()
+            }
+            
+            do {
+                let row = tableFavoriteMovies.filter(id == movieId)
+                let deleteCode = try connection.run(row.delete())
+                if deleteCode != 0 {
+                    print("Delete Successfully. Id = \(movieId)")
+                    observable.onNext(false)
+                    observable.onCompleted()
+                } else {
+                    observable.onError(DatabaseErrors.deleteError)
+                }
+
+            } catch {
+                print("Delete favorites movie failed: \(error)")
+                observable.onError(DatabaseErrors.deleteError)
+            }
+            return Disposables.create()
+        }
+    }
+    
+    public func checkForExistStatus(movieId: Int) -> Observable<Bool> {
+        return Observable.create { observable in
+            guard let connection = DatabaseManager.shared.connection else {
+                print("Check favorite movie failed, connetion = Nil")
+                observable.onError(DatabaseErrors.connectionError)
+                return Disposables.create()
+            }
+            
+            do {
+                let rows = try connection.prepare(tableFavoriteMovies.filter(id == movieId))
+                if movieId == rowsToMovies(rows: rows)?.first?.id {
+                    observable.onNext(true)
+                } else {
+                    observable.onNext(false)
+                }
+                observable.onCompleted()
+            } catch {
+                print("Check favorite movie failed: \(error)")
+                observable.onError(DatabaseErrors.checkExistError)
+            }
+            return Disposables.create()
+        }
+
     }
     
     private func rowsToMovies(rows: AnySequence<Row>?) -> [Movie]? {

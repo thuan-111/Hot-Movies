@@ -19,37 +19,71 @@ struct MovieDetailsViewModel {
     struct Input {
         let loadTrigger: Driver<Void>
         let selectedSimilarTrigger: Driver<Movie>
+        let likeTrigger: Driver<Bool>
     }
     
     struct Output {
         let title: Driver<String>
-        let details: Driver<[DetailsSectionModel]>
+        let detailsAndLiked: Driver<[DetailsSectionModel]>
         let selectedSimilar: Driver<Void>
+        let voidDrivers: [Driver<Void>]
     }
     
     func transform(_ input: Input) -> Output {
         
+        let likedStatus = BehaviorRelay<Bool>(value: false)
+        
         let title = input.loadTrigger
-            .map { self.movie.title }
+            .map { movie.title }
+        
+        let checkLiked = input.loadTrigger
+            .flatMapLatest { _ in
+                return useCase.checkLikedStatus(moiveId: movie.id)
+                    .asDriverOnErrorJustComplete()
+            }
+            .do(onNext: likedStatus.accept(_:))
+            .mapToVoid()
+
+        let liked = input.likeTrigger
+            .flatMapLatest { isLiked -> Driver<Bool> in
+                if isLiked {
+                    return useCase.deleteMovie(movieId: movie.id)
+                        .asDriverOnErrorJustComplete()
+                } else {
+                    return useCase.addMovie(movie: movie)
+                        .asDriverOnErrorJustComplete()
+                }
+            }
+            .do(onNext: likedStatus.accept(_:))
+            .mapToVoid()
         
         let details = input.loadTrigger
             .flatMapLatest { _ in
-                return self.useCase.getMovieDetails(movieId: self.movie.id)
+                return useCase.getMovieDetails(movieId: movie.id)
                     .asDriverOnErrorJustComplete()
             }
-            .map { movieDetails -> [DetailsSectionModel] in
+
+        let detailsAndLiked = Driver.combineLatest(details, likedStatus.asDriver())
+            .map { movieDetails, isLiked -> [DetailsSectionModel] in
                 return [.detail(items: [
-                            .info(model: movieDetails),
-                            .description(model: movieDetails.overview),
-                            .castAndCrew(model: movieDetails.credits),
-                            .similar(model: movieDetails.similar.results)
-                    ])]
+                    .info(model: movieDetails,
+                          likedStatus: isLiked),
+                    .description(model: movieDetails.overview),
+                    .castAndCrew(model: movieDetails.credits),
+                    .similar(model: movieDetails.similar.results)
+                ])]
             }
+            .asDriver(onErrorJustReturn: [DetailsSectionModel]())
         
         let selectedSimilar = input.selectedSimilarTrigger
             .do(onNext: navigator.pushToDetails(details:))
             .mapToVoid()
         
-        return Output(title: title, details: details, selectedSimilar: selectedSimilar)
+        let voidDrivers = [liked, checkLiked]
+
+        return Output(title: title,
+                      detailsAndLiked: detailsAndLiked,
+                      selectedSimilar: selectedSimilar,
+                      voidDrivers: voidDrivers)
     }
 }
