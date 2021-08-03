@@ -22,6 +22,7 @@ final class SearchViewController: UIViewController {
         super.viewDidLoad()
         configureView()
         configureTableView()
+        hideKeyboardWhenTappedAround()
     }
     
     private func configureView() {
@@ -60,5 +61,17 @@ extension SearchViewController: Bindable {
         output.selected
             .drive()
             .disposed(by: rx.disposeBag)
+    }
+}
+
+extension SearchViewController {
+    private func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

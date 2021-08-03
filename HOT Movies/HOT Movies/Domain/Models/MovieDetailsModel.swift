@@ -21,6 +21,7 @@ struct MovieDetailsModel {
     var credits: CreditModel
     var similar: PageInfo
     var videos: VideosModel
+    var runtime: Int
 }
 
 extension MovieDetailsModel {
@@ -35,7 +36,8 @@ extension MovieDetailsModel {
             voteAverage: 0,
             credits: CreditModel(),
             similar: PageInfo(),
-            videos: VideosModel()
+            videos: VideosModel(),
+            runtime: 0
         )
     }
 }
@@ -56,5 +58,6 @@ extension MovieDetailsModel: Mappable {
         credits <- map["credits"]
         similar <- map ["similar"]
         videos <- map ["videos"]
+        runtime <- map["runtime"]
     }
 }

@@ -68,6 +68,7 @@
 		EC8828D8269EEEA1009A2DC1 /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = EC8828D7269EEEA1009A2DC1 /* Localize_Swift */; };
 		EC88762426AAEEFB00C92EA6 /* SimilarMovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC88762226AAEEFB00C92EA6 /* SimilarMovieCollectionViewCell.swift */; };
 		EC88762526AAEEFB00C92EA6 /* SimilarMovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC88762326AAEEFB00C92EA6 /* SimilarMovieCollectionViewCell.xib */; };
+		EC892EA926B912BB0071DC55 /* MarqueeLabel in Frameworks */ = {isa = PBXBuildFile; productRef = EC892EA826B912BB0071DC55 /* MarqueeLabel */; };
 		EC8A868926B136160025B2A2 /* MovieDetailsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A868826B136160025B2A2 /* MovieDetailsNavigator.swift */; };
 		EC9DF68B26AA99950010B204 /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9DF68526AA99950010B204 /* MovieDetailsViewModel.swift */; };
 		EC9DF68C26AA99950010B204 /* MovieSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9DF68626AA99950010B204 /* MovieSectionModel.swift */; };
@@ -195,6 +196,7 @@
 				EC7F9E2D26A81DD700C11C65 /* Cosmos in Frameworks */,
 				EC5B1618269FE453000ACC84 /* Reusable in Frameworks */,
 				EC7F9E3226A81E9B00C11C65 /* RxRelay in Frameworks */,
+				EC892EA926B912BB0071DC55 /* MarqueeLabel in Frameworks */,
 				EC7F9E3426A81E9B00C11C65 /* RxCocoa in Frameworks */,
 				EC5B160F269FE3D2000ACC84 /* Alamofire in Frameworks */,
 				EC7F9E2826A81DB500C11C65 /* RxDataSources in Frameworks */,
@@ -303,16 +305,16 @@
 		EC6AA5AC26A08A9300103407 /* Movie Deltail Screen */ = {
 			isa = PBXGroup;
 			children = (
+				EC9DF69126AA999A0010B204 /* Info Cell */,
+				EC9DF69326AA99B80010B204 /* Description Cell */,
+				EC9DF69426AA99C20010B204 /* Credits Cell */,
+				EC9DF69526AA99D70010B204 /* Similar Movie Cell */,
 				EC9DF68826AA99950010B204 /* MovieDetailsViewController.swift */,
 				EC9DF68A26AA99950010B204 /* MovieDetailsViewController.xib */,
 				EC9DF68526AA99950010B204 /* MovieDetailsViewModel.swift */,
 				EC9DF68626AA99950010B204 /* MovieSectionModel.swift */,
 				EC9DF68926AA99950010B204 /* MovieDetailsUseCase.swift */,
 				EC8A868826B136160025B2A2 /* MovieDetailsNavigator.swift */,
-				EC9DF69526AA99D70010B204 /* Similar Movie Cell */,
-				EC9DF69426AA99C20010B204 /* Credits Cell */,
-				EC9DF69326AA99B80010B204 /* Description Cell */,
-				EC9DF69126AA999A0010B204 /* Info Cell */,
 			);
 			path = "Movie Deltail Screen";
 			sourceTree = "<group>";
@@ -388,8 +390,8 @@
 				EC8828AC269ECC91009A2DC1 /* TabBar */,
 				EC8828AD269ECC9A009A2DC1 /* Home Screen */,
 				EC83384926A9164D00B9AEDB /* Search Screen */,
-				EC6AA5AC26A08A9300103407 /* Movie Deltail Screen */,
 				EC8828AE269ECCAB009A2DC1 /* Favorites Screen */,
+				EC6AA5AC26A08A9300103407 /* Movie Deltail Screen */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -586,6 +588,7 @@
 				EC7F9E3326A81E9B00C11C65 /* RxCocoa */,
 				EC7F9E3526A81E9B00C11C65 /* RxBlocking */,
 				ECC5C4A426B17966000225B2 /* SQLite */,
+				EC892EA826B912BB0071DC55 /* MarqueeLabel */,
 			);
 			productName = "HOT Movies";
 			productReference = EC88288F269ECB54009A2DC1 /* HOT Movies.app */;
@@ -627,6 +630,7 @@
 				EC7F9E2B26A81DD700C11C65 /* XCRemoteSwiftPackageReference "Cosmos" */,
 				EC7F9E2E26A81E9B00C11C65 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				ECC5C4A326B17966000225B2 /* XCRemoteSwiftPackageReference "SQLite" */,
+				EC892EA726B912BB0071DC55 /* XCRemoteSwiftPackageReference "MarqueeLabel" */,
 			);
 			productRefGroup = EC882890269ECB54009A2DC1 /* Products */;
 			projectDirPath = "";
@@ -1055,6 +1059,14 @@
 				minimumVersion = 3.2.0;
 			};
 		};
+		EC892EA726B912BB0071DC55 /* XCRemoteSwiftPackageReference "MarqueeLabel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cbpowell/MarqueeLabel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
 		ECC5C4A326B17966000225B2 /* XCRemoteSwiftPackageReference "SQLite" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
@@ -1135,6 +1147,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EC8828D6269EEEA1009A2DC1 /* XCRemoteSwiftPackageReference "Localize-Swift" */;
 			productName = Localize_Swift;
+		};
+		EC892EA826B912BB0071DC55 /* MarqueeLabel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC892EA726B912BB0071DC55 /* XCRemoteSwiftPackageReference "MarqueeLabel" */;
+			productName = MarqueeLabel;
 		};
 		ECC5C4A426B17966000225B2 /* SQLite */ = {
 			isa = XCSwiftPackageProductDependency;

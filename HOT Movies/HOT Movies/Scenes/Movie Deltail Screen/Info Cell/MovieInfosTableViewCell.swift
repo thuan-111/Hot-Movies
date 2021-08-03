@@ -63,6 +63,7 @@ final class MovieInfosTableViewCell: UITableViewCell, NibReusable {
         posterImage.kf.setImage(with: posterUrl)
         backdropImage.kf.setImage(with: backdropUrl)
         movieTitleLabel.text = movie.title
+        movieTimeLabel.text = ("\(movie.runtime)min")
         cosmosView.rating = Double(movie.voteAverage / 2)
         let voteAverageFormatted = Float(Int(movie.voteAverage * 10)) / 10.0
         rateIndexLabel.text = "\(voteAverageFormatted)/10"
