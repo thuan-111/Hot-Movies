@@ -5,8 +5,8 @@
   Created by Thuận Nguyễn Văn on 14/07/2021.
   
 */
-"HomeTitle" = "Home";
-"SearchTitle" = "Search";
-"FavoritesTitle" = "Favorites";
+"HomeTitle" = "Phim Hay";
+"SearchTitle" = "Tìm Kiếm";
+"FavoritesTitle" = "Yêu Thích";
 "HotMoviesTitle" = "Phim Hay";
 "SearchPlaceholder" = "Tìm kiếm phim ...";

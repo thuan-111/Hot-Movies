@@ -38,6 +38,15 @@
         }
       },
       {
+        "package": "MarqueeLabel",
+        "repositoryURL": "https://github.com/cbpowell/MarqueeLabel",
+        "state": {
+          "branch": null,
+          "revision": "112d8b0cbfef2b7548ecdaa0e6b00bf98692817b",
+          "version": "4.2.0"
+        }
+      },
+      {
         "package": "NSObject-Rx",
         "repositoryURL": "https://github.com/RxSwiftCommunity/NSObject-Rx",
         "state": {
