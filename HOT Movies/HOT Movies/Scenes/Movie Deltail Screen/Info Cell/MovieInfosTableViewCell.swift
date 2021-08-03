@@ -24,8 +24,10 @@ final class MovieInfosTableViewCell: UITableViewCell, NibReusable {
     @IBOutlet private weak var playButton: UIButton!
     
     var likeButtonTapped: ((Bool) -> Void)?
+    var playButtonTapped: ((String?) -> Void)?
     
     private var isLiked = false
+    private var key: String?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -49,7 +51,13 @@ final class MovieInfosTableViewCell: UITableViewCell, NibReusable {
         likeButtonTapped?(isLiked)
     }
     
+    @IBAction func didTapPlayButton(_ sender: Any) {
+        playButtonTapped?(key)
+    }
+    
     func configureCell(movie: MovieDetailsModel, likedStatus: Bool) {
+        isLiked = likedStatus
+        key = movie.videos.results.first?.key
         let posterUrl = URL(string: MovieURLs.shared.imageURL(imagePath: movie.posterPath))
         let backdropUrl = URL(string: MovieURLs.shared.imageURL(imagePath: movie.backdropPath))
         posterImage.kf.setImage(with: posterUrl)
@@ -58,7 +66,6 @@ final class MovieInfosTableViewCell: UITableViewCell, NibReusable {
         cosmosView.rating = Double(movie.voteAverage / 2)
         let voteAverageFormatted = Float(Int(movie.voteAverage * 10)) / 10.0
         rateIndexLabel.text = "\(voteAverageFormatted)/10"
-        isLiked = likedStatus
         configureLikeButton(isLiked: isLiked)
     }
 }

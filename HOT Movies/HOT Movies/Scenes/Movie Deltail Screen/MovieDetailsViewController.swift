@@ -24,6 +24,7 @@ final class MovieDetailsViewController: UIViewController {
     private let similarMovie = PublishSubject<Movie>()
     private let likeButtonTrigger = PublishSubject<Bool>()
     private let loadTrigger = BehaviorSubject<Void>(value: ())
+    private let playTrigger = PublishSubject<String?>()
     
     private var dataSource: DataSource!
     
@@ -70,7 +71,9 @@ extension MovieDetailsViewController: Bindable {
                                                 selectedSimilarTrigger: similarMovie
                                                     .asDriver(onErrorJustReturn: Movie()),
                                                 likeTrigger: likeButtonTrigger
-                                                    .asDriver(onErrorJustReturn: false))
+                                                    .asDriver(onErrorJustReturn: false),
+                                                playTrigger: playTrigger
+                                                    .asDriver(onErrorJustReturn: nil))
         let output = viewModel.transform(input)
         
         output.title
@@ -115,6 +118,7 @@ extension MovieDetailsViewController {
                 let cell = tableView.dequeueReusableCell(for: indexPath,
                                                          cellType: MovieInfosTableViewCell.self)
                 cell.likeButtonTapped = { self?.likeButtonTrigger.onNext($0) }
+                cell.playButtonTapped = { self?.playTrigger.onNext($0) }
                 cell.configureCell(movie: model, likedStatus: likedStatus)
                 return cell
             case .description(let model):

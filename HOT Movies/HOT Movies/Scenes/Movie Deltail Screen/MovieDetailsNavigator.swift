@@ -9,7 +9,10 @@ import Foundation
 import UIKit
 
 protocol MovieDetailsNavigatorType {
+    
     func pushToDetails(details: Movie)
+    
+    func pushYoutube(key: String?)
 }
 
 struct MovieDetailsNavigator: MovieDetailsNavigatorType {
@@ -24,5 +27,13 @@ struct MovieDetailsNavigator: MovieDetailsNavigatorType {
         let viewModel = MovieDetailsViewModel(useCase: useCase, navigator: navigator, movie: details)
         viewController.bindViewModel(to: viewModel)
         navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    func pushYoutube(key: String?) {
+        let urlString = MovieURLs.shared.youtubeTrailerPath(key: key ?? "")
+        guard let url = URL(string: urlString),
+              UIApplication.shared.canOpenURL(url)
+        else { return }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
 }

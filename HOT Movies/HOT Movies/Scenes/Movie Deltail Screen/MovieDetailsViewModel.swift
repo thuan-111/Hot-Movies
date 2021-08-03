@@ -20,6 +20,7 @@ struct MovieDetailsViewModel {
         let loadTrigger: Driver<Void>
         let selectedSimilarTrigger: Driver<Movie>
         let likeTrigger: Driver<Bool>
+        let playTrigger: Driver<String?>
     }
     
     struct Output {
@@ -79,7 +80,11 @@ struct MovieDetailsViewModel {
             .do(onNext: navigator.pushToDetails(details:))
             .mapToVoid()
         
-        let voidDrivers = [liked, checkLiked]
+        let playTrailer = input.playTrigger
+            .do(onNext: navigator.pushYoutube(key:))
+            .mapToVoid()
+
+        let voidDrivers = [liked, checkLiked, playTrailer]
 
         return Output(title: title,
                       detailsAndLiked: detailsAndLiked,
